@@ -8,7 +8,7 @@
         <!--KTV-->
         <scene sceneID="hNz-n2-bh7">
             <objects>
-                <viewController id="9pv-A4-QxB" userLabel="KTV" customClass="FirstViewController" sceneMemberID="viewController">
+                <viewController id="9pv-A4-QxB" userLabel="KTV" customClass="KaraokeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="Ia1-K6-d13"/>
                         <viewControllerLayoutGuide type="bottom" id="4ug-Mw-9AY"/>
@@ -17,19 +17,45 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" text="LAX 万豪" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <rect key="frame" x="178" y="33" width="246" height="82"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="LAX 万豪" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
+                                <rect key="frame" x="174" y="33" width="252" height="82"/>
                                 <animations/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="60"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Business Hours: MON-FRI: 6PM-2AM SAT/SUN: 2PM-2AM  (517)-637-7036 LAXEastLansing.com  301 MAC Ave East Lansing MI" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Heu-kr-RvV">
+                                <rect key="frame" x="180" y="266" width="240" height="249"/>
+                                <animations/>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ndr-t3-knL">
+                                <rect key="frame" x="180" y="130" width="240" height="133"/>
+                                <animations/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="240" id="LeU-wm-0No"/>
+                                    <constraint firstAttribute="height" constant="133" id="OXu-xK-Qac"/>
+                                </constraints>
+                                <string key="text">请使用此应用程序KTV，麻将和池的保留状态。单击选项卡上的底部查看  Check the reservation status of Karaoke, Mahjong and Pool using this app.  Click on a tab on the bottom to view</string>
+                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
+                            <constraint firstItem="Heu-kr-RvV" firstAttribute="top" secondItem="Ndr-t3-knL" secondAttribute="bottom" constant="3" id="87w-4I-6Zf"/>
+                            <constraint firstItem="Heu-kr-RvV" firstAttribute="leading" secondItem="Ndr-t3-knL" secondAttribute="leading" id="Kv5-Rp-zhd"/>
+                            <constraint firstItem="Ndr-t3-knL" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="X4a-OR-cjb"/>
+                            <constraint firstItem="Ndr-t3-knL" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="15" id="ZyW-YR-HPD"/>
                             <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
+                            <constraint firstItem="Heu-kr-RvV" firstAttribute="trailing" secondItem="Ndr-t3-knL" secondAttribute="trailing" id="fd4-xc-Z7T"/>
                             <constraint firstItem="KQZ-1w-vlD" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="13" id="mHx-jr-wPY"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="Heu-kr-RvV" secondAttribute="bottom" constant="36" id="uFP-2m-Isd"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
@@ -46,7 +72,7 @@
         <!--Mahjong-->
         <scene sceneID="wg7-f3-ORb">
             <objects>
-                <viewController id="8rJ-Kc-sve" userLabel="Mahjong" customClass="SecondViewController" sceneMemberID="viewController">
+                <viewController id="8rJ-Kc-sve" userLabel="Mahjong" customClass="MahjongViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="L7p-HK-0SC"/>
                         <viewControllerLayoutGuide type="bottom" id="Djb-ko-YwX"/>
@@ -55,27 +81,18 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Second View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
-                                <rect key="frame" x="195" y="279" width="209.5" height="41.5"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Mahjong View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="zEq-FU-wV5">
+                                <rect key="frame" x="187" y="279" width="226" height="42"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by SecondViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NDk-cv-Gan">
-                                <rect key="frame" x="192" y="329" width="215.5" height="17"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="top" secondItem="zEq-FU-wV5" secondAttribute="bottom" constant="8" symbolic="YES" id="Day-4N-Vmt"/>
-                            <constraint firstItem="NDk-cv-Gan" firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="JgO-Fn-dHn"/>
                             <constraint firstAttribute="centerX" secondItem="zEq-FU-wV5" secondAttribute="centerX" id="qqM-NS-xev"/>
                             <constraint firstAttribute="centerY" secondItem="zEq-FU-wV5" secondAttribute="centerY" id="qzY-Ky-pLD"/>
                         </constraints>
@@ -111,7 +128,7 @@
         <!--Pool-->
         <scene sceneID="txU-If-TSt">
             <objects>
-                <viewController id="PHP-A7-E3s" userLabel="Pool" customClass="FirstViewController" sceneMemberID="viewController">
+                <viewController id="PHP-A7-E3s" userLabel="Pool" customClass="PoolViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="I9q-ob-CO7"/>
                         <viewControllerLayoutGuide type="bottom" id="bOA-4l-gsJ"/>
@@ -120,19 +137,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="NLq-Gs-HYV">
-                                <rect key="frame" x="221" y="279" width="157.5" height="41.5"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Pool View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="NLq-Gs-HYV">
+                                <rect key="frame" x="220" y="279" width="160" height="42"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9pA-eh-iT5">
-                                <rect key="frame" x="203" y="329" width="194.5" height="17"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
@@ -141,8 +151,6 @@
                         <constraints>
                             <constraint firstAttribute="centerY" secondItem="NLq-Gs-HYV" secondAttribute="centerY" id="5J2-aK-5Wm"/>
                             <constraint firstAttribute="centerX" secondItem="NLq-Gs-HYV" secondAttribute="centerX" id="RVE-Be-JJh"/>
-                            <constraint firstItem="9pA-eh-iT5" firstAttribute="top" secondItem="NLq-Gs-HYV" secondAttribute="bottom" constant="8" symbolic="YES" id="kQd-to-QE3"/>
-                            <constraint firstItem="9pA-eh-iT5" firstAttribute="centerX" secondItem="NLq-Gs-HYV" secondAttribute="centerX" id="qz7-RN-wJg"/>
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="ball" id="NOK-CM-fRB"/>
@@ -154,7 +162,7 @@
         <!--KTV-->
         <scene sceneID="m68-w7-uFV">
             <objects>
-                <viewController id="lid-Fh-YYS" userLabel="KTV" customClass="FirstViewController" sceneMemberID="viewController">
+                <viewController id="lid-Fh-YYS" userLabel="KTV" customClass="KaraokeViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="JXi-nz-gtv"/>
                         <viewControllerLayoutGuide type="bottom" id="arE-xq-qlp"/>
@@ -163,28 +171,19 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="First View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="PmS-e8-IaK">
-                                <rect key="frame" x="221" y="279" width="157.5" height="41.5"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Karaoke View" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="PmS-e8-IaK">
+                                <rect key="frame" x="189" y="279" width="222" height="42"/>
                                 <animations/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                                 <fontDescription key="fontDescription" name="Helvetica" family="Helvetica" pointSize="36"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loaded by FirstViewController" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ifP-WW-ysX">
-                                <rect key="frame" x="203" y="329" width="194.5" height="17"/>
-                                <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="ifP-WW-ysX" firstAttribute="centerX" secondItem="PmS-e8-IaK" secondAttribute="centerX" id="AEV-Vn-dwG"/>
                             <constraint firstAttribute="centerX" secondItem="PmS-e8-IaK" secondAttribute="centerX" id="CXB-TC-Jkt"/>
-                            <constraint firstItem="ifP-WW-ysX" firstAttribute="top" secondItem="PmS-e8-IaK" secondAttribute="bottom" constant="8" symbolic="YES" id="FCf-LU-UON"/>
                             <constraint firstAttribute="centerY" secondItem="PmS-e8-IaK" secondAttribute="centerY" id="gab-UX-tHd"/>
                         </constraints>
                     </view>
