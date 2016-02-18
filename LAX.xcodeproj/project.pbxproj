@@ -17,6 +17,7 @@
 		3A7F5E401C6FB09600B0F5CB /* MahjongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7F5E3F1C6FB09600B0F5CB /* MahjongViewController.m */; };
 		3A7F5E431C6FB0A400B0F5CB /* PoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7F5E421C6FB0A400B0F5CB /* PoolViewController.m */; };
 		3A7F5E461C6FB14800B0F5CB /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7F5E451C6FB14800B0F5CB /* HomeViewController.m */; };
+		3A7F5E491C755DAE00B0F5CB /* AvailabilityTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7F5E481C755DAE00B0F5CB /* AvailabilityTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,6 +39,8 @@
 		3A7F5E421C6FB0A400B0F5CB /* PoolViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoolViewController.m; sourceTree = "<group>"; };
 		3A7F5E441C6FB14800B0F5CB /* HomeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeViewController.h; sourceTree = "<group>"; };
 		3A7F5E451C6FB14800B0F5CB /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
+		3A7F5E471C755DAE00B0F5CB /* AvailabilityTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvailabilityTableViewController.h; sourceTree = "<group>"; };
+		3A7F5E481C755DAE00B0F5CB /* AvailabilityTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvailabilityTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -88,6 +91,8 @@
 				3A7F5E421C6FB0A400B0F5CB /* PoolViewController.m */,
 				3A7F5E441C6FB14800B0F5CB /* HomeViewController.h */,
 				3A7F5E451C6FB14800B0F5CB /* HomeViewController.m */,
+				3A7F5E471C755DAE00B0F5CB /* AvailabilityTableViewController.h */,
+				3A7F5E481C755DAE00B0F5CB /* AvailabilityTableViewController.m */,
 			);
 			path = LAX;
 			sourceTree = "<group>";
@@ -179,6 +184,7 @@
 				3A3B137A1C62EA3B000E0732 /* AppDelegate.m in Sources */,
 				3A7F5E431C6FB0A400B0F5CB /* PoolViewController.m in Sources */,
 				3A3B13771C62EA3B000E0732 /* main.m in Sources */,
+				3A7F5E491C755DAE00B0F5CB /* AvailabilityTableViewController.m in Sources */,
 				3A7F5E3D1C6FB01F00B0F5CB /* KaraokeViewController.m in Sources */,
 				3A7F5E401C6FB09600B0F5CB /* MahjongViewController.m in Sources */,
 				3A7F5E461C6FB14800B0F5CB /* HomeViewController.m in Sources */,

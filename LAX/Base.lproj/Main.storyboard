@@ -158,11 +158,11 @@
             </objects>
             <point key="canvasLocation" x="144" y="1106"/>
         </scene>
-        <!--Table View Controller-->
+        <!--Availability Table View Controller-->
         <scene sceneID="RaK-X0-zfg">
             <objects>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Jse-V5-b4C" userLabel="First Responder" sceneMemberID="firstResponder"/>
-                <tableViewController id="5gK-JZ-m6S" sceneMemberID="viewController">
+                <tableViewController id="5gK-JZ-m6S" customClass="AvailabilityTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="wnf-sT-svz">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="481"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -272,6 +272,10 @@
                             <outlet property="delegate" destination="5gK-JZ-m6S" id="qLm-Eb-0IC"/>
                         </connections>
                     </tableView>
+                    <connections>
+                        <outlet property="Room1" destination="My4-I7-a7y" id="zI8-Pw-JT3"/>
+                        <outlet property="Room1String" destination="AhE-ai-3IW" id="rgN-w0-TGD"/>
+                    </connections>
                 </tableViewController>
             </objects>
             <point key="canvasLocation" x="-534" y="1931.5"/>
