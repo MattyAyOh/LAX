@@ -7,13 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A338D641C76B5DB00985DEF /* KaraokeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A338D631C76B5DB00985DEF /* KaraokeViewController.m */; };
 		3A3B13771C62EA3B000E0732 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3B13761C62EA3B000E0732 /* main.m */; };
 		3A3B137A1C62EA3B000E0732 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3B13791C62EA3B000E0732 /* AppDelegate.m */; };
 		3A3B13831C62EA3B000E0732 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A3B13811C62EA3B000E0732 /* Main.storyboard */; };
 		3A3B13851C62EA3B000E0732 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A3B13841C62EA3B000E0732 /* Assets.xcassets */; };
 		3A3B13881C62EA3B000E0732 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A3B13861C62EA3B000E0732 /* LaunchScreen.storyboard */; };
 		3A7F5E3A1C6821AD00B0F5CB /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7F5E391C6821AD00B0F5CB /* CloudKit.framework */; };
-		3A7F5E3D1C6FB01F00B0F5CB /* KaraokeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7F5E3C1C6FB01F00B0F5CB /* KaraokeViewController.m */; };
 		3A7F5E401C6FB09600B0F5CB /* MahjongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7F5E3F1C6FB09600B0F5CB /* MahjongViewController.m */; };
 		3A7F5E431C6FB0A400B0F5CB /* PoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7F5E421C6FB0A400B0F5CB /* PoolViewController.m */; };
 		3A7F5E461C6FB14800B0F5CB /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7F5E451C6FB14800B0F5CB /* HomeViewController.m */; };
@@ -21,6 +21,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		3A338D621C76B5DB00985DEF /* KaraokeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KaraokeViewController.h; sourceTree = "<group>"; };
+		3A338D631C76B5DB00985DEF /* KaraokeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KaraokeViewController.m; sourceTree = "<group>"; };
 		3A3B13721C62EA3B000E0732 /* LAX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LAX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A3B13761C62EA3B000E0732 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3A3B13781C62EA3B000E0732 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -31,8 +33,6 @@
 		3A3B13891C62EA3B000E0732 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A7F5E381C681E4100B0F5CB /* LAX.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = LAX.entitlements; sourceTree = "<group>"; };
 		3A7F5E391C6821AD00B0F5CB /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
-		3A7F5E3B1C6FB01F00B0F5CB /* KaraokeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KaraokeViewController.h; sourceTree = "<group>"; };
-		3A7F5E3C1C6FB01F00B0F5CB /* KaraokeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KaraokeViewController.m; sourceTree = "<group>"; };
 		3A7F5E3E1C6FB09600B0F5CB /* MahjongViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MahjongViewController.h; sourceTree = "<group>"; };
 		3A7F5E3F1C6FB09600B0F5CB /* MahjongViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MahjongViewController.m; sourceTree = "<group>"; };
 		3A7F5E411C6FB0A400B0F5CB /* PoolViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoolViewController.h; sourceTree = "<group>"; };
@@ -83,8 +83,6 @@
 				3A3B13861C62EA3B000E0732 /* LaunchScreen.storyboard */,
 				3A3B13891C62EA3B000E0732 /* Info.plist */,
 				3A3B13751C62EA3B000E0732 /* Supporting Files */,
-				3A7F5E3B1C6FB01F00B0F5CB /* KaraokeViewController.h */,
-				3A7F5E3C1C6FB01F00B0F5CB /* KaraokeViewController.m */,
 				3A7F5E3E1C6FB09600B0F5CB /* MahjongViewController.h */,
 				3A7F5E3F1C6FB09600B0F5CB /* MahjongViewController.m */,
 				3A7F5E411C6FB0A400B0F5CB /* PoolViewController.h */,
@@ -93,6 +91,8 @@
 				3A7F5E451C6FB14800B0F5CB /* HomeViewController.m */,
 				3A7F5E471C755DAE00B0F5CB /* AvailabilityTableViewController.h */,
 				3A7F5E481C755DAE00B0F5CB /* AvailabilityTableViewController.m */,
+				3A338D621C76B5DB00985DEF /* KaraokeViewController.h */,
+				3A338D631C76B5DB00985DEF /* KaraokeViewController.m */,
 			);
 			path = LAX;
 			sourceTree = "<group>";
@@ -185,9 +185,9 @@
 				3A7F5E431C6FB0A400B0F5CB /* PoolViewController.m in Sources */,
 				3A3B13771C62EA3B000E0732 /* main.m in Sources */,
 				3A7F5E491C755DAE00B0F5CB /* AvailabilityTableViewController.m in Sources */,
-				3A7F5E3D1C6FB01F00B0F5CB /* KaraokeViewController.m in Sources */,
 				3A7F5E401C6FB09600B0F5CB /* MahjongViewController.m in Sources */,
 				3A7F5E461C6FB14800B0F5CB /* HomeViewController.m in Sources */,
+				3A338D641C76B5DB00985DEF /* KaraokeViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
