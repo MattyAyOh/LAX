@@ -18,6 +18,10 @@
 @property (strong, nonatomic) IBOutlet UILabel *roomThreeLabel;
 @property (strong, nonatomic) IBOutlet UIView *roomFourView;
 @property (strong, nonatomic) IBOutlet UILabel *roomFourLabel;
+@property (strong, nonatomic) IBOutlet UIView *roomFiveView;
+@property (strong, nonatomic) IBOutlet UILabel *roomFiveLabel;
+@property (strong, nonatomic) IBOutlet UIView *roomSixView;
+@property (strong, nonatomic) IBOutlet UILabel *roomSixLabel;
 
 @end
 
@@ -27,11 +31,13 @@
    [super viewDidLoad];
    
    [self.view setBackgroundColor:[UIColor colorWithRed:(193.0/255.0) green:(11.0/255.0) blue:(33.0/255.0) alpha:1.0]];
-   [[self roomOneView] setBackgroundColor:[UIColor redColor]];
+   [[self roomThreeView] setBackgroundColor:[UIColor redColor]];
    self.roomThreeLabel.attributedText = [[NSAttributedString alloc] initWithString:@"OCCUPIED SINCE: 6:00PM" attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor blackColor], NSStrokeWidthAttributeName : @-5.0 }];
    self.roomTwoLabel.attributedText = [[NSAttributedString alloc] initWithString:@"AVAILABLE" attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }];
    self.roomOneLabel.attributedText = [[NSAttributedString alloc] initWithString:@"AVAILABLE" attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }];
    self.roomFourLabel.attributedText = [[NSAttributedString alloc] initWithString:@"AVAILABLE" attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }];
+   self.roomFiveLabel.attributedText = [[NSAttributedString alloc] initWithString:@"AVAILABLE" attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }];
+   self.roomSixLabel.attributedText = [[NSAttributedString alloc] initWithString:@"AVAILABLE" attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }];
 }
 
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
@@ -51,13 +57,19 @@
          tempLabel.text = @"ROOM 1";
          break;
       case 1:
-         tempLabel.text = @"ROOM 2";
+         tempLabel.text = @"ROOM 2 [SICHUAN]";
          break;
       case 2:
          tempLabel.text = @"ROOM 3";
          break;
       case 3:
-         tempLabel.text = @"ROOM 4";
+         tempLabel.text = @"ROOM 4 [SICHUAN]";
+         break;
+      case 4:
+         tempLabel.text = @"ROOM 5";
+         break;
+      case 5:
+         tempLabel.text = @"ROOM 6";
          break;
       default:
          tempLabel.text = @"ERROR LOADING NAME";

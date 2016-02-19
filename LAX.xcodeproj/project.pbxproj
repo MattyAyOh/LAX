@@ -102,10 +102,10 @@
 				3A7F5E451C6FB14800B0F5CB /* HomeViewController.m */,
 				3A7F5E471C755DAE00B0F5CB /* AvailabilityTableViewController.h */,
 				3A7F5E481C755DAE00B0F5CB /* AvailabilityTableViewController.m */,
-				3A338D651C76B62500985DEF /* KaraokeTableViewController.h */,
-				3A338D661C76B62500985DEF /* KaraokeTableViewController.m */,
 				3A338D681C76B63A00985DEF /* MahjongTableViewController.h */,
 				3A338D691C76B63A00985DEF /* MahjongTableViewController.m */,
+				3A338D651C76B62500985DEF /* KaraokeTableViewController.h */,
+				3A338D661C76B62500985DEF /* KaraokeTableViewController.m */,
 				3A338D6B1C76B64C00985DEF /* PoolTableViewController.h */,
 				3A338D6C1C76B64C00985DEF /* PoolTableViewController.m */,
 			);
@@ -319,6 +319,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = LAX/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ao.LAX;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -334,6 +335,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				INFOPLIST_FILE = LAX/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = ao.LAX;
 				PRODUCT_NAME = "$(TARGET_NAME)";

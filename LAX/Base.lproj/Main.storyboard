@@ -78,8 +78,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" text="Mahjong" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="tm4-E8-tMM">
-                                <rect key="frame" x="189" y="30" width="222" height="50"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Mahjong" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="tm4-E8-tMM">
+                                <rect key="frame" x="189" y="30" width="222" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="0lX-dr-Fh0"/>
                                     <constraint firstAttribute="width" constant="222" id="MyP-bP-qmq"/>
@@ -157,8 +157,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" misplaced="YES" text="Pool" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="pdq-kP-Xab">
-                                <rect key="frame" x="189" y="30" width="222" height="50"/>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Pool" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="pdq-kP-Xab">
+                                <rect key="frame" x="189" y="30" width="222" height="42"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="42" id="GVV-IE-Aql"/>
                                     <constraint firstAttribute="width" constant="222" id="mf7-ce-te3"/>
@@ -640,10 +640,14 @@
                         </connections>
                     </tableView>
                     <connections>
+                        <outlet property="roomFiveLabel" destination="fze-Il-6Qf" id="Hyk-Fn-btf"/>
+                        <outlet property="roomFiveView" destination="Q7T-Ok-hSy" id="hXc-gC-Bsd"/>
                         <outlet property="roomFourLabel" destination="dXO-QA-koE" id="T0o-uI-Eot"/>
                         <outlet property="roomFourView" destination="45E-zF-SwG" id="Rwu-w6-R1H"/>
                         <outlet property="roomOneLabel" destination="enw-vb-iXk" id="Agd-XM-XYk"/>
                         <outlet property="roomOneView" destination="z5G-U3-9jW" id="kM4-VY-YZw"/>
+                        <outlet property="roomSixLabel" destination="Qxq-Yb-rsP" id="M0B-Sa-6R9"/>
+                        <outlet property="roomSixView" destination="QWS-Ra-1ES" id="Rch-UB-Uua"/>
                         <outlet property="roomThreeLabel" destination="2ey-fx-tbK" id="lkq-CP-RqM"/>
                         <outlet property="roomThreeView" destination="rUK-Sx-fcz" id="WWi-br-L6R"/>
                         <outlet property="roomTwoLabel" destination="atx-YJ-GGz" id="bBF-bk-W6G"/>
