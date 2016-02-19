@@ -374,10 +374,10 @@
             </objects>
             <point key="canvasLocation" x="-608" y="1070"/>
         </scene>
-        <!--Karaoke Table View Controller-->
+        <!--Pool Table View Controller-->
         <scene sceneID="Qec-Sd-1TD">
             <objects>
-                <tableViewController id="Elx-YY-mON" customClass="KaraokeTableViewController" sceneMemberID="viewController">
+                <tableViewController id="Elx-YY-mON" customClass="PoolTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="kQs-w5-v7g">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="449"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -490,10 +490,10 @@
             </objects>
             <point key="canvasLocation" x="492" y="1887"/>
         </scene>
-        <!--Karaoke Table View Controller-->
+        <!--Mahjong Table View Controller-->
         <scene sceneID="on3-zd-eMx">
             <objects>
-                <tableViewController id="9Ez-WV-xA3" customClass="KaraokeTableViewController" sceneMemberID="viewController">
+                <tableViewController id="9Ez-WV-xA3" customClass="MahjongTableViewController" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="grouped" allowsSelection="NO" showsSelectionImmediatelyOnTouchBegin="NO" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" id="Ff3-Ed-lrb">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="449"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

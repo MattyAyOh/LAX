@@ -10,28 +10,63 @@
 
 @interface PoolTableViewController ()
 
+@property (strong, nonatomic) IBOutlet UIView *roomOneView;
+@property (strong, nonatomic) IBOutlet UILabel *roomOneLabel;
+@property (strong, nonatomic) IBOutlet UIView *roomTwoView;
+@property (strong, nonatomic) IBOutlet UILabel *roomTwoLabel;
+@property (strong, nonatomic) IBOutlet UIView *roomThreeView;
+@property (strong, nonatomic) IBOutlet UILabel *roomThreeLabel;
+@property (strong, nonatomic) IBOutlet UIView *roomFourView;
+@property (strong, nonatomic) IBOutlet UILabel *roomFourLabel;
+
 @end
 
 @implementation PoolTableViewController
 
 - (void)viewDidLoad {
-    [super viewDidLoad];
-    // Do any additional setup after loading the view.
+   [super viewDidLoad];
+   
+   [self.view setBackgroundColor:[UIColor colorWithRed:(193.0/255.0) green:(11.0/255.0) blue:(33.0/255.0) alpha:1.0]];
+   [[self roomOneView] setBackgroundColor:[UIColor redColor]];
+   self.roomOneLabel.attributedText = [[NSAttributedString alloc] initWithString:@"AVAILABLE" attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }];
+   self.roomTwoLabel.attributedText = [[NSAttributedString alloc] initWithString:@"OCCUPIED SINCE: 11:10PM" attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor blackColor], NSStrokeWidthAttributeName : @-5.0 }];
+   self.roomThreeLabel.attributedText = [[NSAttributedString alloc] initWithString:@"OCCUPIED SINCE: 8:00PM" attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor blackColor], NSStrokeWidthAttributeName : @-5.0 }];
+   self.roomFourLabel.attributedText = [[NSAttributedString alloc] initWithString:@"AVAILABLE" attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+-(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
+{
+   UIView *tempView=[[UIView alloc]initWithFrame:CGRectMake(0,200,300,244)];
+   tempView.backgroundColor=[UIColor clearColor];
+   
+   UILabel *tempLabel=[[UILabel alloc]initWithFrame:CGRectMake(15,0,300,44)];
+   tempLabel.backgroundColor=[UIColor clearColor];
+   tempLabel.shadowColor = [UIColor colorWithRed:(33.0/255.0) green:(33.0/255.0) blue:(33.0/255.0) alpha:1.0];
+   tempLabel.shadowOffset = CGSizeMake(0,2);
+   tempLabel.textColor = [UIColor whiteColor]; //here you can change the text color of header.
+   tempLabel.font = [UIFont fontWithName:@"Helvetica" size:20.0];
+   tempLabel.font = [UIFont boldSystemFontOfSize:20.0];
+   switch (section) {
+      case 0:
+         tempLabel.text = @"TABLE 1";
+         break;
+      case 1:
+         tempLabel.text = @"TABLE 2";
+         break;
+      case 2:
+         tempLabel.text = @"TABLE 3";
+         break;
+      case 3:
+         tempLabel.text = @"TABLE 4";
+         break;
+      default:
+         tempLabel.text = @"ERROR LOADING NAME";
+         break;
+   }
+   
+   [tempView addSubview:tempLabel];
+   
+   return tempView;
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end
