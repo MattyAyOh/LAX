@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		3A338D641C76B5DB00985DEF /* KaraokeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A338D631C76B5DB00985DEF /* KaraokeViewController.m */; };
+		3A338D671C76B62500985DEF /* KaraokeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A338D661C76B62500985DEF /* KaraokeTableViewController.m */; };
+		3A338D6A1C76B63A00985DEF /* MahjongTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A338D691C76B63A00985DEF /* MahjongTableViewController.m */; };
+		3A338D6D1C76B64C00985DEF /* PoolTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A338D6C1C76B64C00985DEF /* PoolTableViewController.m */; };
 		3A3B13771C62EA3B000E0732 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3B13761C62EA3B000E0732 /* main.m */; };
 		3A3B137A1C62EA3B000E0732 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3B13791C62EA3B000E0732 /* AppDelegate.m */; };
 		3A3B13831C62EA3B000E0732 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A3B13811C62EA3B000E0732 /* Main.storyboard */; };
@@ -23,6 +26,12 @@
 /* Begin PBXFileReference section */
 		3A338D621C76B5DB00985DEF /* KaraokeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KaraokeViewController.h; sourceTree = "<group>"; };
 		3A338D631C76B5DB00985DEF /* KaraokeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KaraokeViewController.m; sourceTree = "<group>"; };
+		3A338D651C76B62500985DEF /* KaraokeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KaraokeTableViewController.h; sourceTree = "<group>"; };
+		3A338D661C76B62500985DEF /* KaraokeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KaraokeTableViewController.m; sourceTree = "<group>"; };
+		3A338D681C76B63A00985DEF /* MahjongTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MahjongTableViewController.h; sourceTree = "<group>"; };
+		3A338D691C76B63A00985DEF /* MahjongTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MahjongTableViewController.m; sourceTree = "<group>"; };
+		3A338D6B1C76B64C00985DEF /* PoolTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PoolTableViewController.h; sourceTree = "<group>"; };
+		3A338D6C1C76B64C00985DEF /* PoolTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoolTableViewController.m; sourceTree = "<group>"; };
 		3A3B13721C62EA3B000E0732 /* LAX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LAX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A3B13761C62EA3B000E0732 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3A3B13781C62EA3B000E0732 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -93,6 +102,12 @@
 				3A7F5E481C755DAE00B0F5CB /* AvailabilityTableViewController.m */,
 				3A338D621C76B5DB00985DEF /* KaraokeViewController.h */,
 				3A338D631C76B5DB00985DEF /* KaraokeViewController.m */,
+				3A338D651C76B62500985DEF /* KaraokeTableViewController.h */,
+				3A338D661C76B62500985DEF /* KaraokeTableViewController.m */,
+				3A338D681C76B63A00985DEF /* MahjongTableViewController.h */,
+				3A338D691C76B63A00985DEF /* MahjongTableViewController.m */,
+				3A338D6B1C76B64C00985DEF /* PoolTableViewController.h */,
+				3A338D6C1C76B64C00985DEF /* PoolTableViewController.m */,
 			);
 			path = LAX;
 			sourceTree = "<group>";
@@ -185,7 +200,10 @@
 				3A7F5E431C6FB0A400B0F5CB /* PoolViewController.m in Sources */,
 				3A3B13771C62EA3B000E0732 /* main.m in Sources */,
 				3A7F5E491C755DAE00B0F5CB /* AvailabilityTableViewController.m in Sources */,
+				3A338D671C76B62500985DEF /* KaraokeTableViewController.m in Sources */,
+				3A338D6A1C76B63A00985DEF /* MahjongTableViewController.m in Sources */,
 				3A7F5E401C6FB09600B0F5CB /* MahjongViewController.m in Sources */,
+				3A338D6D1C76B64C00985DEF /* PoolTableViewController.m in Sources */,
 				3A7F5E461C6FB14800B0F5CB /* HomeViewController.m in Sources */,
 				3A338D641C76B5DB00985DEF /* KaraokeViewController.m in Sources */,
 			);
