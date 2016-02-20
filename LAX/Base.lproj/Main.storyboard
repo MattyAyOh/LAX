@@ -126,12 +126,17 @@
         <!--Tab Bar Controller-->
         <scene sceneID="yl2-sM-qoP">
             <objects>
-                <tabBarController id="49e-Tb-3d3" sceneMemberID="viewController">
+                <tabBarController id="49e-Tb-3d3" customClass="LAXTabBarController" sceneMemberID="viewController">
                     <nil key="simulatedBottomBarMetrics"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" id="W28-zg-YXA">
                         <rect key="frame" x="0.0" y="975" width="768" height="49"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMinY="YES"/>
                         <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="tintColor">
+                                <color key="value" red="0.75686274509803919" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
                     </tabBar>
                     <connections>
                         <segue destination="9pv-A4-QxB" kind="relationship" relationship="viewControllers" id="u7Y-xg-7CH"/>
@@ -660,10 +665,10 @@
         </scene>
     </scenes>
     <resources>
-        <image name="ball" width="30" height="30"/>
-        <image name="home" width="30" height="28"/>
+        <image name="ball" width="48" height="32"/>
+        <image name="home" width="48" height="32"/>
         <image name="horizontalBar" width="1842" height="82"/>
-        <image name="mic" width="30" height="28"/>
-        <image name="tile" width="30" height="28"/>
+        <image name="mic" width="48" height="32"/>
+        <image name="tile" width="48" height="32"/>
     </resources>
 </document>
