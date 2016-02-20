@@ -67,6 +67,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		3A338D711C784EC100985DEF /* CustomViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3A338D6E1C784E4F00985DEF /* LAXTabBarController.h */,
+				3A338D6F1C784E4F00985DEF /* LAXTabBarController.m */,
+			);
+			name = CustomViewControllers;
+			sourceTree = "<group>";
+		};
+		3A338D721C784F2700985DEF /* TableViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3A7F5E471C755DAE00B0F5CB /* AvailabilityTableViewController.h */,
+				3A7F5E481C755DAE00B0F5CB /* AvailabilityTableViewController.m */,
+				3A338D681C76B63A00985DEF /* MahjongTableViewController.h */,
+				3A338D691C76B63A00985DEF /* MahjongTableViewController.m */,
+				3A338D6B1C76B64C00985DEF /* PoolTableViewController.h */,
+				3A338D6C1C76B64C00985DEF /* PoolTableViewController.m */,
+				3A338D651C76B62500985DEF /* KaraokeTableViewController.h */,
+				3A338D661C76B62500985DEF /* KaraokeTableViewController.m */,
+			);
+			name = TableViewControllers;
+			sourceTree = "<group>";
+		};
+		3A338D731C784F3500985DEF /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				3A7F5E441C6FB14800B0F5CB /* HomeViewController.h */,
+				3A7F5E451C6FB14800B0F5CB /* HomeViewController.m */,
+				3A7F5E3E1C6FB09600B0F5CB /* MahjongViewController.h */,
+				3A7F5E3F1C6FB09600B0F5CB /* MahjongViewController.m */,
+				3A7F5E411C6FB0A400B0F5CB /* PoolViewController.h */,
+				3A7F5E421C6FB0A400B0F5CB /* PoolViewController.m */,
+				3A338D621C76B5DB00985DEF /* KaraokeViewController.h */,
+				3A338D631C76B5DB00985DEF /* KaraokeViewController.m */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
 		3A3B13691C62EA3B000E0732 = {
 			isa = PBXGroup;
 			children = (
@@ -87,32 +126,15 @@
 		3A3B13741C62EA3B000E0732 /* LAX */ = {
 			isa = PBXGroup;
 			children = (
-				3A7F5E381C681E4100B0F5CB /* LAX.entitlements */,
 				3A3B13781C62EA3B000E0732 /* AppDelegate.h */,
 				3A3B13791C62EA3B000E0732 /* AppDelegate.m */,
-				3A3B13841C62EA3B000E0732 /* Assets.xcassets */,
-				3A3B13861C62EA3B000E0732 /* LaunchScreen.storyboard */,
-				3A3B13891C62EA3B000E0732 /* Info.plist */,
-				3A3B13751C62EA3B000E0732 /* Supporting Files */,
+				3A338D711C784EC100985DEF /* CustomViewControllers */,
+				3A338D731C784F3500985DEF /* ViewControllers */,
+				3A338D721C784F2700985DEF /* TableViewControllers */,
 				3A3B13811C62EA3B000E0732 /* Main.storyboard */,
-				3A7F5E3E1C6FB09600B0F5CB /* MahjongViewController.h */,
-				3A7F5E3F1C6FB09600B0F5CB /* MahjongViewController.m */,
-				3A7F5E411C6FB0A400B0F5CB /* PoolViewController.h */,
-				3A7F5E421C6FB0A400B0F5CB /* PoolViewController.m */,
-				3A338D621C76B5DB00985DEF /* KaraokeViewController.h */,
-				3A338D631C76B5DB00985DEF /* KaraokeViewController.m */,
-				3A7F5E441C6FB14800B0F5CB /* HomeViewController.h */,
-				3A7F5E451C6FB14800B0F5CB /* HomeViewController.m */,
-				3A7F5E471C755DAE00B0F5CB /* AvailabilityTableViewController.h */,
-				3A7F5E481C755DAE00B0F5CB /* AvailabilityTableViewController.m */,
-				3A338D681C76B63A00985DEF /* MahjongTableViewController.h */,
-				3A338D691C76B63A00985DEF /* MahjongTableViewController.m */,
-				3A338D651C76B62500985DEF /* KaraokeTableViewController.h */,
-				3A338D661C76B62500985DEF /* KaraokeTableViewController.m */,
-				3A338D6B1C76B64C00985DEF /* PoolTableViewController.h */,
-				3A338D6C1C76B64C00985DEF /* PoolTableViewController.m */,
-				3A338D6E1C784E4F00985DEF /* LAXTabBarController.h */,
-				3A338D6F1C784E4F00985DEF /* LAXTabBarController.m */,
+				3A3B13861C62EA3B000E0732 /* LaunchScreen.storyboard */,
+				3A3B13841C62EA3B000E0732 /* Assets.xcassets */,
+				3A3B13751C62EA3B000E0732 /* Supporting Files */,
 			);
 			path = LAX;
 			sourceTree = "<group>";
@@ -120,6 +142,8 @@
 		3A3B13751C62EA3B000E0732 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3A7F5E381C681E4100B0F5CB /* LAX.entitlements */,
+				3A3B13891C62EA3B000E0732 /* Info.plist */,
 				3A3B13761C62EA3B000E0732 /* main.m */,
 			);
 			name = "Supporting Files";
