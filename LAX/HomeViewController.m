@@ -17,7 +17,12 @@
 @property int characterIndex;
 @property BOOL statusIsOpen;
 
+@property (strong, nonatomic) IBOutlet UISegmentedControl *homeSegmentedControl;
+
 @property (strong, nonatomic) IBOutlet UIView *homeBackgroundView;
+
+@property (strong, nonatomic) IBOutlet UITextView *newsTextView;
+
 @property (strong, nonatomic) IBOutlet UILabel *hoursLabel;
 @property (strong, nonatomic) IBOutlet UITextView *addressTextView;
 @property (strong, nonatomic) IBOutlet UITextView *phoneTextView;
@@ -30,7 +35,6 @@
 - (void)viewDidLoad {
    [super viewDidLoad];
    self.view.backgroundColor = [UIColor laxRED];
-
    
    self.statusBackgroundView.layer.cornerRadius = 25.0;
    self.statusBackgroundView.backgroundColor = [UIColor laxLightTransparentGRAY];
@@ -43,24 +47,41 @@
    self.homeBackgroundView.layer.cornerRadius = 20.0;
    self.homeBackgroundView.backgroundColor = [UIColor laxSemiTransparentGRAY];
 
+   self.newsTextView.attributedText = [self.newsTextView.attributedText stringByAddingOutlineOfColor:[UIColor blackColor]];
    self.addressTextView.attributedText = [self.addressTextView.attributedText stringByAddingOutlineOfColor:[UIColor blueColor]];
    self.phoneTextView.attributedText = [self.phoneTextView.attributedText stringByAddingOutlineOfColor:[UIColor blueColor]];
    self.websiteTextView.attributedText = [self.websiteTextView.attributedText stringByAddingOutlineOfColor:[UIColor blueColor]];
    
    if( [[UIScreen mainScreen] bounds].size.height < 550 )
    {
-      [self.addressTextView setHidden:YES];
-      [self.phoneTextView setHidden:YES];
-   }
-   else
-   {
-      [self.addressTextView setHidden:NO];
-      [self.phoneTextView setHidden:NO];
+      [self.addressTextView removeFromSuperview];
+      [self.phoneTextView removeFromSuperview];
    }
 
+   [self homeSegmentedControlChanged:nil];
+   
    [NSTimer scheduledTimerWithTimeInterval:0.4 target:self selector:@selector(flashStatus:) userInfo:nil repeats:YES];
 }
 
+- (IBAction)homeSegmentedControlChanged:(id)sender
+{
+   if( self.homeSegmentedControl.selectedSegmentIndex == 0 )
+   {
+      [self.newsTextView setHidden:NO];
+      [self.hoursLabel setHidden:YES];
+      [self.addressTextView setHidden:YES];
+      [self.phoneTextView setHidden:YES];
+      [self.websiteTextView setHidden:YES];
+   }
+   else
+   {
+      [self.newsTextView setHidden:YES];
+      [self.hoursLabel setHidden:NO];
+      [self.addressTextView setHidden:NO];
+      [self.phoneTextView setHidden:NO];
+      [self.websiteTextView setHidden:NO];
+   }
+}
 
 -(void)viewDidAppear:(BOOL)animated
 {
