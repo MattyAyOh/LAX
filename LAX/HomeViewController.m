@@ -19,8 +19,9 @@
 @property (strong, nonatomic) IBOutlet UILabel *phoneLabel;
 
 @property (strong, nonatomic) IBOutlet UILabel *statusLabel;
-@property int characterIndex;
 
+@property int characterIndex;
+@property BOOL statusIsOpen;
 @end
 
 @implementation HomeViewController
@@ -47,14 +48,55 @@
    [NSTimer scheduledTimerWithTimeInterval:0.4 target:self selector:@selector(flashStatus:) userInfo:nil repeats:YES];
 }
 
+-(void)viewDidAppear:(BOOL)animated
+{
+   NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitHour | NSCalendarUnitWeekday fromDate:[NSDate date]];
+   NSInteger currentHour = [components hour];
+   NSInteger weekDay = [components weekday];
+   
+   NSLog(@"%ld", (long)currentHour);
+   NSLog(@"%ld", (long)weekDay);
+   if( currentHour < 2 )
+   {
+      [self setStatusToOpen];
+   }
+   else if( currentHour >= 14 && (weekDay == 1 || weekDay == 7) )
+   {
+      [self setStatusToOpen];
+   }
+   else if( currentHour >= 18 && (weekDay == 2 || weekDay == 3 || weekDay == 4 || weekDay == 5 || weekDay == 6 ) )
+   {
+      [self setStatusToOpen];
+   }
+   else
+   {
+      [self setStatusToClosed];
+   }
+}
+
+- (void)setStatusToOpen
+{
+   [self.statusLabel setText:@"OPEN NOW"];
+   self.statusIsOpen = YES;
+}
+
+- (void)setStatusToClosed
+{
+   [self.statusLabel setText:@"CLOSED NOW"];
+   self.statusIsOpen = NO;
+}
 
 
--(void)flashStatus:(NSTimer*)timer
+- (void)flashStatus:(NSTimer*)timer
 {
    self.characterIndex ++;
 
    NSMutableAttributedString *tempString = [self.statusLabel.attributedText mutableCopy];
-   NSDictionary *redAttribute = @{NSForegroundColorAttributeName:[UIColor redColor]};
+   NSDictionary *activeAttribute = @{NSForegroundColorAttributeName:[UIColor redColor]};
+   if( self.statusIsOpen )
+   {
+      activeAttribute = @{NSForegroundColorAttributeName:[UIColor greenColor]};
+   }
    NSDictionary *grayAttribute = @{NSForegroundColorAttributeName:[UIColor laxGRAY]};
 
    NSRange range = NSMakeRange(0, tempString.length);
@@ -65,7 +107,7 @@
    }
    if( self.characterIndex==([tempString length]+4) )
    {
-      [tempString setAttributes: redAttribute range:range];
+      [tempString setAttributes: activeAttribute range:range];
    }
    else if( self.characterIndex==([tempString length]+3) )
    {
@@ -73,7 +115,7 @@
    }
    else if( self.characterIndex==([tempString length]+2))
    {
-      [tempString setAttributes: redAttribute range:range];
+      [tempString setAttributes: activeAttribute range:range];
    }
    else if (self.characterIndex==([tempString length]+1))
    {
@@ -82,7 +124,7 @@
    else
    {
       NSRange range = NSMakeRange(0, self.characterIndex);
-      [tempString setAttributes: redAttribute range:range];
+      [tempString setAttributes: activeAttribute range:range];
    }
    self.statusLabel.attributedText = tempString;
 }
