@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fu6-a9-69c">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="homePaintBackground" translatesAutoresizingMaskIntoConstraints="NO" id="Fu6-a9-69c">
                                 <rect key="frame" x="20" y="0.0" width="560" height="551"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="144" id="UjD-75-2qh"/>
@@ -57,7 +57,7 @@
                                 <rect key="frame" x="20" y="171" width="560" height="29"/>
                                 <color key="backgroundColor" red="0.75686274509999996" green="0.043137254899999998" blue="0.12941176469999999" alpha="0.54272629310344822" colorSpace="calibratedRGB"/>
                                 <segments>
-                                    <segment title="Current Deals"/>
+                                    <segment title="News"/>
                                     <segment title="Business Info"/>
                                 </segments>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
@@ -757,6 +757,7 @@
     <resources>
         <image name="ball" width="48" height="32"/>
         <image name="home" width="48" height="32"/>
+        <image name="homePaintBackground" width="850" height="1200"/>
         <image name="horizontalBar" width="1842" height="82"/>
         <image name="mic" width="48" height="32"/>
         <image name="tile" width="48" height="32"/>

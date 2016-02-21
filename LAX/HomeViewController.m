@@ -45,6 +45,18 @@
    self.homeBackgroundView.backgroundColor = [UIColor laxSemiTransparentGRAY];
 
    [NSTimer scheduledTimerWithTimeInterval:0.4 target:self selector:@selector(flashStatus:) userInfo:nil repeats:YES];
+   
+   if( [[UIScreen mainScreen] bounds].size.height < 560 )
+   {
+      [self.addressLabel setHidden:YES];
+      [self.phoneLabel setHidden:YES];
+   }
+   else
+   {
+      [self.addressLabel setHidden:NO];
+      [self.phoneLabel setHidden:NO];
+   }
+   NSLog(@"SCREEN SIZE: %@", NSStringFromCGRect([[UIScreen mainScreen] bounds]));
 }
 
 
