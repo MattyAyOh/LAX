@@ -16,7 +16,6 @@
 		3A3B137A1C62EA3B000E0732 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3B13791C62EA3B000E0732 /* AppDelegate.m */; };
 		3A3B13831C62EA3B000E0732 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A3B13811C62EA3B000E0732 /* Main.storyboard */; };
 		3A3B13851C62EA3B000E0732 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A3B13841C62EA3B000E0732 /* Assets.xcassets */; };
-		3A3B13881C62EA3B000E0732 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A3B13861C62EA3B000E0732 /* LaunchScreen.storyboard */; };
 		3A7F5E3A1C6821AD00B0F5CB /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7F5E391C6821AD00B0F5CB /* CloudKit.framework */; };
 		3A7F5E401C6FB09600B0F5CB /* MahjongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7F5E3F1C6FB09600B0F5CB /* MahjongViewController.m */; };
 		3A7F5E431C6FB0A400B0F5CB /* PoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7F5E421C6FB0A400B0F5CB /* PoolViewController.m */; };
@@ -41,7 +40,6 @@
 		3A3B13791C62EA3B000E0732 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		3A3B13821C62EA3B000E0732 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A3B13841C62EA3B000E0732 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		3A3B13871C62EA3B000E0732 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3A3B13891C62EA3B000E0732 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3A7F5E381C681E4100B0F5CB /* LAX.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = LAX.entitlements; sourceTree = "<group>"; };
 		3A7F5E391C6821AD00B0F5CB /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
@@ -132,7 +130,6 @@
 				3A338D731C784F3500985DEF /* ViewControllers */,
 				3A338D721C784F2700985DEF /* TableViewControllers */,
 				3A3B13811C62EA3B000E0732 /* Main.storyboard */,
-				3A3B13861C62EA3B000E0732 /* LaunchScreen.storyboard */,
 				3A3B13841C62EA3B000E0732 /* Assets.xcassets */,
 				3A3B13751C62EA3B000E0732 /* Supporting Files */,
 			);
@@ -212,7 +209,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3A3B13881C62EA3B000E0732 /* LaunchScreen.storyboard in Resources */,
 				3A3B13851C62EA3B000E0732 /* Assets.xcassets in Resources */,
 				3A3B13831C62EA3B000E0732 /* Main.storyboard in Resources */,
 			);
@@ -248,14 +244,6 @@
 				3A3B13821C62EA3B000E0732 /* Base */,
 			);
 			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		3A3B13861C62EA3B000E0732 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				3A3B13871C62EA3B000E0732 /* Base */,
-			);
-			name = LaunchScreen.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
