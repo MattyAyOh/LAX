@@ -53,9 +53,7 @@
    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitHour | NSCalendarUnitWeekday fromDate:[NSDate date]];
    NSInteger currentHour = [components hour];
    NSInteger weekDay = [components weekday];
-   
-   NSLog(@"%ld", (long)currentHour);
-   NSLog(@"%ld", (long)weekDay);
+
    if( currentHour < 2 )
    {
       [self setStatusToOpen];
