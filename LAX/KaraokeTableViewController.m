@@ -26,7 +26,7 @@
 - (void)viewDidLoad {
    [super viewDidLoad];
    
-   [self.view setBackgroundColor:[UIColor colorWithRed:(193.0/255.0) green:(11.0/255.0) blue:(33.0/255.0) alpha:1.0]];
+   [self.view setBackgroundColor:[UIColor laxRED]];
    [[self roomOneView] setBackgroundColor:[UIColor laxGRAY]];
    self.roomOneLabel.attributedText = [[NSAttributedString alloc] initWithString:@"OCCUPIED SINCE: 10:30PM" attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }];
    self.roomTwoLabel.attributedText = [[NSAttributedString alloc] initWithString:@"AVAILABLE" attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }];
@@ -41,7 +41,7 @@
    
    UILabel *tempLabel=[[UILabel alloc]initWithFrame:CGRectMake(15,0,300,44)];
    tempLabel.backgroundColor=[UIColor clearColor];
-   tempLabel.shadowColor = [UIColor colorWithRed:(33.0/255.0) green:(33.0/255.0) blue:(33.0/255.0) alpha:1.0];
+   tempLabel.shadowColor = [UIColor laxGRAY];
    tempLabel.shadowOffset = CGSizeMake(0,2);
    tempLabel.textColor = [UIColor whiteColor]; //here you can change the text color of header.
    tempLabel.font = [UIFont fontWithName:@"Helvetica" size:20.0];

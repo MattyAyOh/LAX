@@ -18,9 +18,9 @@
 
 - (void)viewDidLoad {
    [super viewDidLoad];
-   self.view.backgroundColor = [UIColor colorWithRed:(193.0/255.0) green:(11.0/255.0) blue:(33.0/255.0) alpha:1.0];
+   self.view.backgroundColor = [UIColor laxRED];
    
-   self.poolHeader.shadowColor = [UIColor colorWithRed:(33.0/255.0) green:(33.0/255.0) blue:(33.0/255.0) alpha:1.0];
+   self.poolHeader.shadowColor = [UIColor laxGRAY];
    self.poolHeader.shadowOffset = CGSizeMake(0,2);}
 
 @end
