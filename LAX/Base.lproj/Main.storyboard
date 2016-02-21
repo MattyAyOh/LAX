@@ -65,35 +65,108 @@
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3bq-R2-RcN">
                                 <rect key="frame" x="40" y="229" width="520" height="291.5"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LAXEastLansing.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXK-Wo-jkH">
-                                        <rect key="frame" x="169" y="255.5" width="181.5" height="26"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(517)-657-7036" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPo-WT-xhY">
-                                        <rect key="frame" x="193" y="160" width="134" height="26"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Business Hours: Mon-Fri: 6PM-2AM Sat/Sun: 2PM-2AM" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sep-vy-fZm">
-                                        <rect key="frame" x="178" y="10" width="164" height="78"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
+                                        <rect key="frame" x="177" y="10" width="166" height="78"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="19"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="301 MAC Ave East Lansing MI" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AeM-Xw-yKN">
-                                        <rect key="frame" x="193" y="98" width="134.5" height="52"/>
-                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="19"/>
-                                        <nil key="highlightedColor"/>
-                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="LAXEastLansing.com" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yxG-mE-ym5">
+                                        <rect key="frame" x="156" y="241" width="207" height="40"/>
+                                        <color key="tintColor" red="0.0" green="0.73911475699999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="201" id="XoT-1Z-Kaa"/>
+                                            <constraint firstAttribute="width" constant="207" id="a68-ji-8lb"/>
+                                            <constraint firstAttribute="width" constant="207" id="cNA-eU-rrq"/>
+                                            <constraint firstAttribute="height" constant="40" id="dO1-eF-44M"/>
+                                            <constraint firstAttribute="width" constant="238" id="jNn-Ev-z5J"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="19"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <dataDetectorType key="dataDetectorTypes" link="YES"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="XoT-1Z-Kaa"/>
+                                                <exclude reference="a68-ji-8lb"/>
+                                                <exclude reference="jNn-Ev-z5J"/>
+                                            </mask>
+                                        </variation>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="(517)-657-7036" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="d9J-Wy-xlW">
+                                        <rect key="frame" x="181" y="166" width="157" height="42"/>
+                                        <color key="tintColor" red="0.0" green="0.7391147569530202" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="238" id="3XB-Rv-y98"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="5Ca-of-lqP"/>
+                                            <constraint firstAttribute="width" constant="207" id="85O-Ft-ZYb"/>
+                                            <constraint firstAttribute="width" constant="157" id="BaE-9g-dQz"/>
+                                            <constraint firstAttribute="width" constant="207" id="C5P-wM-tsv"/>
+                                            <constraint firstAttribute="height" constant="42" id="CXs-5P-0Q0"/>
+                                            <constraint firstAttribute="width" constant="201" id="Dfy-gB-txa"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="207" id="ZAX-DC-Bs9"/>
+                                            <constraint firstAttribute="height" constant="40" id="nEt-uR-0ae"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="19"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <dataDetectorType key="dataDetectorTypes" phoneNumber="YES"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="3XB-Rv-y98"/>
+                                                <exclude reference="5Ca-of-lqP"/>
+                                                <exclude reference="85O-Ft-ZYb"/>
+                                                <exclude reference="C5P-wM-tsv"/>
+                                                <exclude reference="Dfy-gB-txa"/>
+                                                <exclude reference="ZAX-DC-Bs9"/>
+                                                <exclude reference="nEt-uR-0ae"/>
+                                            </mask>
+                                        </variation>
+                                    </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" misplaced="YES" editable="NO" text="301 MAC AVE East Lansing MI" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="CQq-5g-KLi">
+                                        <rect key="frame" x="182" y="95" width="157" height="68"/>
+                                        <color key="tintColor" red="0.0" green="0.73911475699999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="201" id="7A2-zb-w4l"/>
+                                            <constraint firstAttribute="height" constant="40" id="BpL-Jm-96C"/>
+                                            <constraint firstAttribute="width" constant="157" id="HHj-pV-lg6"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="157" id="I3S-EJ-PET"/>
+                                            <constraint firstAttribute="width" constant="157" id="JVj-Bq-wJ3"/>
+                                            <constraint firstAttribute="height" constant="64" id="KsD-qb-XNY"/>
+                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="207" id="TY3-I2-0vt"/>
+                                            <constraint firstAttribute="width" constant="238" id="Tdh-a5-15h"/>
+                                            <constraint firstAttribute="height" constant="42" id="ecS-jv-w7n"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="68" id="ftf-m2-uJn"/>
+                                            <constraint firstAttribute="width" constant="207" id="hlf-TX-7W8"/>
+                                            <constraint firstAttribute="width" constant="207" id="khH-Y3-6ek"/>
+                                            <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="knj-94-6gC"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Medium" family="Avenir Next" pointSize="19"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                        <dataDetectorType key="dataDetectorTypes" address="YES"/>
+                                        <variation key="default">
+                                            <mask key="constraints">
+                                                <exclude reference="7A2-zb-w4l"/>
+                                                <exclude reference="BpL-Jm-96C"/>
+                                                <exclude reference="HHj-pV-lg6"/>
+                                                <exclude reference="I3S-EJ-PET"/>
+                                                <exclude reference="TY3-I2-0vt"/>
+                                                <exclude reference="Tdh-a5-15h"/>
+                                                <exclude reference="ecS-jv-w7n"/>
+                                                <exclude reference="ftf-m2-uJn"/>
+                                                <exclude reference="hlf-TX-7W8"/>
+                                                <exclude reference="khH-Y3-6ek"/>
+                                                <exclude reference="knj-94-6gC"/>
+                                            </mask>
+                                        </variation>
+                                    </textView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstItem="LPo-WT-xhY" firstAttribute="centerX" secondItem="3bq-R2-RcN" secondAttribute="centerX" id="QjT-1S-9Un"/>
-                                    <constraint firstItem="TXK-Wo-jkH" firstAttribute="centerX" secondItem="3bq-R2-RcN" secondAttribute="centerX" id="RM2-Zb-qqr"/>
-                                    <constraint firstItem="LPo-WT-xhY" firstAttribute="top" secondItem="AeM-Xw-yKN" secondAttribute="bottom" constant="10" id="RRv-FQ-Hax"/>
-                                    <constraint firstItem="AeM-Xw-yKN" firstAttribute="centerX" secondItem="3bq-R2-RcN" secondAttribute="centerX" id="Uyg-5A-LQE"/>
-                                    <constraint firstItem="AeM-Xw-yKN" firstAttribute="top" secondItem="Sep-vy-fZm" secondAttribute="bottom" constant="10" id="WND-Wv-rsy"/>
-                                    <constraint firstAttribute="bottom" secondItem="TXK-Wo-jkH" secondAttribute="bottom" constant="10" id="XPY-e9-JbG"/>
+                                    <constraint firstItem="CQq-5g-KLi" firstAttribute="centerX" secondItem="3bq-R2-RcN" secondAttribute="centerX" id="DZm-pt-eVT"/>
+                                    <constraint firstItem="CQq-5g-KLi" firstAttribute="top" secondItem="Sep-vy-fZm" secondAttribute="bottom" constant="7" id="GUb-VV-jqR"/>
+                                    <constraint firstAttribute="bottom" secondItem="yxG-mE-ym5" secondAttribute="bottom" constant="10" id="Rji-wT-7Pq"/>
+                                    <constraint firstItem="yxG-mE-ym5" firstAttribute="centerX" secondItem="3bq-R2-RcN" secondAttribute="centerX" id="dII-hE-zap"/>
+                                    <constraint firstItem="d9J-Wy-xlW" firstAttribute="top" secondItem="CQq-5g-KLi" secondAttribute="bottom" constant="7" id="dtu-ZP-u1d"/>
+                                    <constraint firstItem="d9J-Wy-xlW" firstAttribute="centerX" secondItem="3bq-R2-RcN" secondAttribute="centerX" id="gz7-6Q-uqC"/>
                                     <constraint firstItem="Sep-vy-fZm" firstAttribute="centerX" secondItem="3bq-R2-RcN" secondAttribute="centerX" id="pBA-jd-VVZ"/>
                                     <constraint firstItem="Sep-vy-fZm" firstAttribute="top" secondItem="3bq-R2-RcN" secondAttribute="top" constant="10" id="r6t-Sk-xB9"/>
                                 </constraints>
@@ -142,14 +215,14 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="home" id="acW-dT-cKf"/>
                     <connections>
-                        <outlet property="addressLabel" destination="AeM-Xw-yKN" id="Boo-Lu-xCx"/>
+                        <outlet property="addressTextView" destination="CQq-5g-KLi" id="Pfi-O4-ag2"/>
                         <outlet property="homeBackgroundView" destination="3bq-R2-RcN" id="UPo-VH-A2U"/>
                         <outlet property="hoursLabel" destination="Sep-vy-fZm" id="uif-e8-bkt"/>
                         <outlet property="laxHeader" destination="KQZ-1w-vlD" id="jCy-5G-XDm"/>
-                        <outlet property="phoneLabel" destination="LPo-WT-xhY" id="HZV-MX-yGP"/>
+                        <outlet property="phoneTextView" destination="d9J-Wy-xlW" id="Dmf-We-RxJ"/>
                         <outlet property="statusBackgroundView" destination="Z1Y-V4-at9" id="k3A-Uh-imM"/>
                         <outlet property="statusLabel" destination="WKM-g7-jWe" id="rUV-OD-qmV"/>
-                        <outlet property="websiteLabel" destination="TXK-Wo-jkH" id="xiQ-J6-ycV"/>
+                        <outlet property="websiteTextView" destination="yxG-mE-ym5" id="dHd-Ho-hDc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>

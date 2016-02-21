@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A11F6A81C7A6EB900A9971E /* NSAttributedString+LAX.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A11F6A71C7A6EB900A9971E /* NSAttributedString+LAX.m */; };
 		3A338D641C76B5DB00985DEF /* KaraokeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A338D631C76B5DB00985DEF /* KaraokeViewController.m */; };
 		3A338D671C76B62500985DEF /* KaraokeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A338D661C76B62500985DEF /* KaraokeTableViewController.m */; };
 		3A338D6A1C76B63A00985DEF /* MahjongTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A338D691C76B63A00985DEF /* MahjongTableViewController.m */; };
@@ -26,6 +27,8 @@
 
 /* Begin PBXFileReference section */
 		3A11F69F1C7A397C00A9971E /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		3A11F6A61C7A6EB900A9971E /* NSAttributedString+LAX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+LAX.h"; sourceTree = "<group>"; };
+		3A11F6A71C7A6EB900A9971E /* NSAttributedString+LAX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+LAX.m"; sourceTree = "<group>"; };
 		3A338D621C76B5DB00985DEF /* KaraokeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KaraokeViewController.h; sourceTree = "<group>"; };
 		3A338D631C76B5DB00985DEF /* KaraokeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KaraokeViewController.m; sourceTree = "<group>"; };
 		3A338D651C76B62500985DEF /* KaraokeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KaraokeTableViewController.h; sourceTree = "<group>"; };
@@ -76,6 +79,8 @@
 				3A338D6F1C784E4F00985DEF /* LAXTabBarController.m */,
 				3A338D7A1C79892100985DEF /* UIColor+LAX.h */,
 				3A338D7B1C79892100985DEF /* UIColor+LAX.m */,
+				3A11F6A61C7A6EB900A9971E /* NSAttributedString+LAX.h */,
+				3A11F6A71C7A6EB900A9971E /* NSAttributedString+LAX.m */,
 			);
 			name = Custom;
 			sourceTree = "<group>";
@@ -240,6 +245,7 @@
 				3A338D701C784E4F00985DEF /* LAXTabBarController.m in Sources */,
 				3A7F5E461C6FB14800B0F5CB /* HomeViewController.m in Sources */,
 				3A338D641C76B5DB00985DEF /* KaraokeViewController.m in Sources */,
+				3A11F6A81C7A6EB900A9971E /* NSAttributedString+LAX.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -19,9 +19,9 @@
 
 @property (strong, nonatomic) IBOutlet UIView *homeBackgroundView;
 @property (strong, nonatomic) IBOutlet UILabel *hoursLabel;
-@property (strong, nonatomic) IBOutlet UILabel *addressLabel;
-@property (strong, nonatomic) IBOutlet UILabel *phoneLabel;
-@property (strong, nonatomic) IBOutlet UILabel *websiteLabel;
+@property (strong, nonatomic) IBOutlet UITextView *addressTextView;
+@property (strong, nonatomic) IBOutlet UITextView *phoneTextView;
+@property (strong, nonatomic) IBOutlet UITextView *websiteTextView;
 
 @end
 
@@ -30,8 +30,7 @@
 - (void)viewDidLoad {
    [super viewDidLoad];
    self.view.backgroundColor = [UIColor laxRED];
-   
-   self.laxHeader.attributedText = [[NSAttributedString alloc] initWithString:self.laxHeader.text attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-0.0 }];
+
    
    self.statusBackgroundView.layer.cornerRadius = 25.0;
    self.statusBackgroundView.backgroundColor = [UIColor laxLightTransparentGRAY];
@@ -44,19 +43,22 @@
    self.homeBackgroundView.layer.cornerRadius = 20.0;
    self.homeBackgroundView.backgroundColor = [UIColor laxSemiTransparentGRAY];
 
-   [NSTimer scheduledTimerWithTimeInterval:0.4 target:self selector:@selector(flashStatus:) userInfo:nil repeats:YES];
+   self.addressTextView.attributedText = [self.addressTextView.attributedText stringByAddingOutlineOfColor:[UIColor blueColor]];
+   self.phoneTextView.attributedText = [self.phoneTextView.attributedText stringByAddingOutlineOfColor:[UIColor blueColor]];
+   self.websiteTextView.attributedText = [self.websiteTextView.attributedText stringByAddingOutlineOfColor:[UIColor blueColor]];
    
-   if( [[UIScreen mainScreen] bounds].size.height < 560 )
+   if( [[UIScreen mainScreen] bounds].size.height < 550 )
    {
-      [self.addressLabel setHidden:YES];
-      [self.phoneLabel setHidden:YES];
+      [self.addressTextView setHidden:YES];
+      [self.phoneTextView setHidden:YES];
    }
    else
    {
-      [self.addressLabel setHidden:NO];
-      [self.phoneLabel setHidden:NO];
+      [self.addressTextView setHidden:NO];
+      [self.phoneTextView setHidden:NO];
    }
-   NSLog(@"SCREEN SIZE: %@", NSStringFromCGRect([[UIScreen mainScreen] bounds]));
+
+   [NSTimer scheduledTimerWithTimeInterval:0.4 target:self selector:@selector(flashStatus:) userInfo:nil repeats:YES];
 }
 
 

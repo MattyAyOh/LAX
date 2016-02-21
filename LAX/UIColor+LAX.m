@@ -27,7 +27,7 @@
 
 +(UIColor*)laxSemiTransparentGRAY
 {
-   return [UIColor colorWithRed:(33.0/255.0) green:(33.0/255.0) blue:(33.0/255.0) alpha:0.6];
+   return [UIColor colorWithRed:(33.0/255.0) green:(33.0/255.0) blue:(33.0/255.0) alpha:0.5];
 }
 
 @end
