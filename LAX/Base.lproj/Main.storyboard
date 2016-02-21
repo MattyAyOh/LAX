@@ -143,12 +143,12 @@
                     <tabBarItem key="tabBarItem" title="" image="home" id="acW-dT-cKf"/>
                     <connections>
                         <outlet property="addressLabel" destination="AeM-Xw-yKN" id="Boo-Lu-xCx"/>
+                        <outlet property="homeBackgroundView" destination="3bq-R2-RcN" id="UPo-VH-A2U"/>
                         <outlet property="hoursLabel" destination="Sep-vy-fZm" id="uif-e8-bkt"/>
                         <outlet property="laxHeader" destination="KQZ-1w-vlD" id="jCy-5G-XDm"/>
-                        <outlet property="openView" destination="Z1Y-V4-at9" id="Utm-5x-XPG"/>
                         <outlet property="phoneLabel" destination="LPo-WT-xhY" id="HZV-MX-yGP"/>
+                        <outlet property="statusBackgroundView" destination="Z1Y-V4-at9" id="k3A-Uh-imM"/>
                         <outlet property="statusLabel" destination="WKM-g7-jWe" id="rUV-OD-qmV"/>
-                        <outlet property="transparentRoundedView" destination="3bq-R2-RcN" id="Pxr-w4-686"/>
                         <outlet property="websiteLabel" destination="TXK-Wo-jkH" id="xiQ-J6-ycV"/>
                     </connections>
                 </viewController>

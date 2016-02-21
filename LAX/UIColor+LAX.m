@@ -20,4 +20,14 @@
    return [UIColor colorWithRed:(33.0/255.0) green:(33.0/255.0) blue:(33.0/255.0) alpha:1.0];
 }
 
++(UIColor*)laxLightTransparentGRAY
+{
+   return [UIColor colorWithRed:(33.0/255.0) green:(33.0/255.0) blue:(33.0/255.0) alpha:0.8];
+}
+
++(UIColor*)laxSemiTransparentGRAY
+{
+   return [UIColor colorWithRed:(33.0/255.0) green:(33.0/255.0) blue:(33.0/255.0) alpha:0.6];
+}
+
 @end

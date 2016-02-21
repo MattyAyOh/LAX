@@ -10,43 +10,44 @@
 #import "UIColor+LAX.h"
 
 @interface HomeViewController ()
+
 @property (strong, nonatomic) IBOutlet UILabel *laxHeader;
-@property (strong, nonatomic) IBOutlet UIView *transparentRoundedView;
-@property (strong, nonatomic) IBOutlet UIView *openView;
-@property (strong, nonatomic) IBOutlet UILabel *hoursLabel;
-@property (strong, nonatomic) IBOutlet UILabel *websiteLabel;
-@property (strong, nonatomic) IBOutlet UILabel *addressLabel;
-@property (strong, nonatomic) IBOutlet UILabel *phoneLabel;
 
 @property (strong, nonatomic) IBOutlet UILabel *statusLabel;
-
+@property (strong, nonatomic) IBOutlet UIView *statusBackgroundView;
 @property int characterIndex;
 @property BOOL statusIsOpen;
+
+@property (strong, nonatomic) IBOutlet UIView *homeBackgroundView;
+@property (strong, nonatomic) IBOutlet UILabel *hoursLabel;
+@property (strong, nonatomic) IBOutlet UILabel *addressLabel;
+@property (strong, nonatomic) IBOutlet UILabel *phoneLabel;
+@property (strong, nonatomic) IBOutlet UILabel *websiteLabel;
+
 @end
 
 @implementation HomeViewController
 
 - (void)viewDidLoad {
    [super viewDidLoad];
-   self.view.backgroundColor = [UIColor colorWithRed:(193.0/255.0) green:(11.0/255.0) blue:(33.0/255.0) alpha:1.0];
+   self.view.backgroundColor = [UIColor laxRED];
    
    self.laxHeader.attributedText = [[NSAttributedString alloc] initWithString:self.laxHeader.text attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-0.0 }];
    
-   self.transparentRoundedView.layer.cornerRadius = 20.0;
-   self.transparentRoundedView.backgroundColor = [UIColor colorWithRed:(33.0/255.0) green:(33.0/255.0) blue:(33.0/255.0) alpha:0.6];
-   
-   self.openView.layer.cornerRadius = 25.0;
-   self.openView.backgroundColor = [UIColor colorWithRed:(33.0/255.0) green:(33.0/255.0) blue:(33.0/255.0) alpha:0.8];
+   self.statusBackgroundView.layer.cornerRadius = 25.0;
+   self.statusBackgroundView.backgroundColor = [UIColor laxLightTransparentGRAY];
    
    CGFloat borderWidth = 2.0f;
+   self.statusBackgroundView.frame = CGRectInset(self.statusBackgroundView.frame, -borderWidth, -borderWidth);
+   self.statusBackgroundView.layer.borderColor = [UIColor blackColor].CGColor;
+   self.statusBackgroundView.layer.borderWidth = borderWidth;
    
-   self.openView.frame = CGRectInset(self.openView.frame, -borderWidth, -borderWidth);
-   self.openView.layer.borderColor = [UIColor blackColor].CGColor;
-   self.openView.layer.borderWidth = borderWidth;
+   self.homeBackgroundView.layer.cornerRadius = 20.0;
+   self.homeBackgroundView.backgroundColor = [UIColor laxSemiTransparentGRAY];
 
-   
    [NSTimer scheduledTimerWithTimeInterval:0.4 target:self selector:@selector(flashStatus:) userInfo:nil repeats:YES];
 }
+
 
 -(void)viewDidAppear:(BOOL)animated
 {
