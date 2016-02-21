@@ -12,6 +12,7 @@
 		3A338D6A1C76B63A00985DEF /* MahjongTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A338D691C76B63A00985DEF /* MahjongTableViewController.m */; };
 		3A338D6D1C76B64C00985DEF /* PoolTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A338D6C1C76B64C00985DEF /* PoolTableViewController.m */; };
 		3A338D701C784E4F00985DEF /* LAXTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A338D6F1C784E4F00985DEF /* LAXTabBarController.m */; };
+		3A338D7C1C79892100985DEF /* UIColor+LAX.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A338D7B1C79892100985DEF /* UIColor+LAX.m */; };
 		3A3B13771C62EA3B000E0732 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3B13761C62EA3B000E0732 /* main.m */; };
 		3A3B137A1C62EA3B000E0732 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3B13791C62EA3B000E0732 /* AppDelegate.m */; };
 		3A3B13831C62EA3B000E0732 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A3B13811C62EA3B000E0732 /* Main.storyboard */; };
@@ -34,6 +35,8 @@
 		3A338D6C1C76B64C00985DEF /* PoolTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PoolTableViewController.m; sourceTree = "<group>"; };
 		3A338D6E1C784E4F00985DEF /* LAXTabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LAXTabBarController.h; sourceTree = "<group>"; };
 		3A338D6F1C784E4F00985DEF /* LAXTabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LAXTabBarController.m; sourceTree = "<group>"; };
+		3A338D7A1C79892100985DEF /* UIColor+LAX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+LAX.h"; sourceTree = "<group>"; };
+		3A338D7B1C79892100985DEF /* UIColor+LAX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+LAX.m"; sourceTree = "<group>"; };
 		3A3B13721C62EA3B000E0732 /* LAX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LAX.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A3B13761C62EA3B000E0732 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		3A3B13781C62EA3B000E0732 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -70,6 +73,8 @@
 			children = (
 				3A338D6E1C784E4F00985DEF /* LAXTabBarController.h */,
 				3A338D6F1C784E4F00985DEF /* LAXTabBarController.m */,
+				3A338D7A1C79892100985DEF /* UIColor+LAX.h */,
+				3A338D7B1C79892100985DEF /* UIColor+LAX.m */,
 			);
 			name = CustomViews;
 			sourceTree = "<group>";
@@ -222,6 +227,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3A3B137A1C62EA3B000E0732 /* AppDelegate.m in Sources */,
+				3A338D7C1C79892100985DEF /* UIColor+LAX.m in Sources */,
 				3A7F5E431C6FB0A400B0F5CB /* PoolViewController.m in Sources */,
 				3A3B13771C62EA3B000E0732 /* main.m in Sources */,
 				3A7F5E491C755DAE00B0F5CB /* AvailabilityTableViewController.m in Sources */,
