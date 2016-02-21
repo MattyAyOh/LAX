@@ -67,13 +67,13 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3A338D711C784EC100985DEF /* CustomViewControllers */ = {
+		3A338D711C784EC100985DEF /* CustomViews */ = {
 			isa = PBXGroup;
 			children = (
 				3A338D6E1C784E4F00985DEF /* LAXTabBarController.h */,
 				3A338D6F1C784E4F00985DEF /* LAXTabBarController.m */,
 			);
-			name = CustomViewControllers;
+			name = CustomViews;
 			sourceTree = "<group>";
 		};
 		3A338D721C784F2700985DEF /* TableViewControllers */ = {
@@ -128,7 +128,7 @@
 			children = (
 				3A3B13781C62EA3B000E0732 /* AppDelegate.h */,
 				3A3B13791C62EA3B000E0732 /* AppDelegate.m */,
-				3A338D711C784EC100985DEF /* CustomViewControllers */,
+				3A338D711C784EC100985DEF /* CustomViews */,
 				3A338D731C784F3500985DEF /* ViewControllers */,
 				3A338D721C784F2700985DEF /* TableViewControllers */,
 				3A3B13811C62EA3B000E0732 /* Main.storyboard */,

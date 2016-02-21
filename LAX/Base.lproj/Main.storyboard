@@ -18,49 +18,123 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Fu6-a9-69c">
+                                <rect key="frame" x="20" y="0.0" width="560" height="551"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="144" id="UjD-75-2qh"/>
+                                </constraints>
+                                <variation key="default">
+                                    <mask key="constraints">
+                                        <exclude reference="UjD-75-2qh"/>
+                                    </mask>
+                                </variation>
+                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="LAX 万豪" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="KQZ-1w-vlD">
-                                <rect key="frame" x="174" y="33" width="252" height="82"/>
-                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="60"/>
+                                <rect key="frame" x="153" y="25" width="294" height="96"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="70"/>
                                 <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="Business Hours: MON-FRI: 6PM-2AM SAT/SUN: 2PM-2AM  (517)-637-7036 LAXEastLansing.com  301 MAC Ave East Lansing MI" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Heu-kr-RvV">
-                                <rect key="frame" x="180" y="266" width="240" height="249"/>
-                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="21"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Ndr-t3-knL">
-                                <rect key="frame" x="180" y="130" width="240" height="133"/>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="jfO-RT-Vds">
+                                <rect key="frame" x="20" y="121" width="560" height="29"/>
+                                <color key="backgroundColor" red="0.75686274509999996" green="0.043137254899999998" blue="0.12941176469999999" alpha="0.54272629310344822" colorSpace="calibratedRGB"/>
+                                <segments>
+                                    <segment title="Current Deals"/>
+                                    <segment title="Business Info"/>
+                                </segments>
+                                <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                            </segmentedControl>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3bq-R2-RcN">
+                                <rect key="frame" x="40" y="179" width="520" height="342"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="OPEN NOW" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="3mj-I2-Mte">
+                                        <rect key="frame" x="191" y="20" width="139.5" height="33"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="24"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Business Hours: Mon-Fri: 6PM-2AM Sat/Sun: 2PM-2AM" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Sep-vy-fZm">
+                                        <rect key="frame" x="187" y="63" width="146.5" height="70"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="www.LAXEastLansing.com" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="TXK-Wo-jkH">
+                                        <rect key="frame" x="158" y="298" width="204" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="301 MAC Ave East Lansing MI" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AeM-Xw-yKN">
+                                        <rect key="frame" x="200" y="153" width="120.5" height="46.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="(517)-657-7036" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LPo-WT-xhY">
+                                        <rect key="frame" x="200" y="219" width="120" height="23.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
-                                    <constraint firstAttribute="width" constant="240" id="LeU-wm-0No"/>
-                                    <constraint firstAttribute="height" constant="133" id="OXu-xK-Qac"/>
+                                    <constraint firstItem="Sep-vy-fZm" firstAttribute="top" secondItem="3mj-I2-Mte" secondAttribute="bottom" constant="10" id="4SP-9l-nKq"/>
+                                    <constraint firstItem="3mj-I2-Mte" firstAttribute="top" secondItem="3bq-R2-RcN" secondAttribute="top" constant="20" id="N1P-5I-gjU"/>
+                                    <constraint firstItem="LPo-WT-xhY" firstAttribute="centerX" secondItem="3bq-R2-RcN" secondAttribute="centerX" id="QjT-1S-9Un"/>
+                                    <constraint firstItem="TXK-Wo-jkH" firstAttribute="centerX" secondItem="3bq-R2-RcN" secondAttribute="centerX" id="RM2-Zb-qqr"/>
+                                    <constraint firstItem="LPo-WT-xhY" firstAttribute="top" secondItem="AeM-Xw-yKN" secondAttribute="bottom" constant="20" id="RRv-FQ-Hax"/>
+                                    <constraint firstItem="AeM-Xw-yKN" firstAttribute="centerX" secondItem="3bq-R2-RcN" secondAttribute="centerX" id="Uyg-5A-LQE"/>
+                                    <constraint firstItem="AeM-Xw-yKN" firstAttribute="top" secondItem="Sep-vy-fZm" secondAttribute="bottom" constant="20" id="WND-Wv-rsy"/>
+                                    <constraint firstAttribute="bottom" secondItem="TXK-Wo-jkH" secondAttribute="bottom" constant="20" id="XPY-e9-JbG"/>
+                                    <constraint firstItem="3mj-I2-Mte" firstAttribute="centerX" secondItem="3bq-R2-RcN" secondAttribute="centerX" id="ha4-DC-RNX"/>
+                                    <constraint firstItem="Sep-vy-fZm" firstAttribute="centerX" secondItem="3bq-R2-RcN" secondAttribute="centerX" id="pBA-jd-VVZ"/>
                                 </constraints>
-                                <string key="text">请使用此应用程序KTV，麻将和池的保留状态。单击选项卡上的底部查看  Check the reservation status of Karaoke, Mahjong and Pool using this app.  Click on a tab on the bottom to view</string>
-                                <color key="textColor" red="0.93725490199999995" green="0.93725490199999995" blue="0.95686274510000002" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
-                            </textView>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="6BV-lF-sBN"/>
-                            <constraint firstItem="Heu-kr-RvV" firstAttribute="top" secondItem="Ndr-t3-knL" secondAttribute="bottom" constant="3" id="87w-4I-6Zf"/>
-                            <constraint firstItem="Heu-kr-RvV" firstAttribute="leading" secondItem="Ndr-t3-knL" secondAttribute="leading" id="Kv5-Rp-zhd"/>
-                            <constraint firstItem="Ndr-t3-knL" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="X4a-OR-cjb"/>
-                            <constraint firstItem="Ndr-t3-knL" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" constant="15" id="ZyW-YR-HPD"/>
+                            <constraint firstItem="KQZ-1w-vlD" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="5" id="36u-ix-7pO"/>
+                            <constraint firstItem="3bq-R2-RcN" firstAttribute="top" secondItem="jfO-RT-Vds" secondAttribute="bottom" constant="30" id="4lF-KJ-3Sc"/>
+                            <constraint firstItem="jfO-RT-Vds" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" constant="110" id="7X4-iA-OeF"/>
+                            <constraint firstItem="Fu6-a9-69c" firstAttribute="bottom" secondItem="jfO-RT-Vds" secondAttribute="bottom" id="Cmz-qi-CFL"/>
+                            <constraint firstItem="jfO-RT-Vds" firstAttribute="leading" secondItem="Fu6-a9-69c" secondAttribute="leading" id="FHo-T9-muQ"/>
+                            <constraint firstItem="jfO-RT-Vds" firstAttribute="top" secondItem="KQZ-1w-vlD" secondAttribute="bottom" id="FNd-CK-AbV"/>
+                            <constraint firstItem="jfO-RT-Vds" firstAttribute="trailing" secondItem="Fu6-a9-69c" secondAttribute="trailing" id="LXL-CX-0Y2"/>
+                            <constraint firstItem="Fu6-a9-69c" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" id="WS5-lJ-DrZ"/>
+                            <constraint firstItem="3bq-R2-RcN" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="top" constant="190" id="XWJ-G8-d1z"/>
+                            <constraint firstItem="3bq-R2-RcN" firstAttribute="top" secondItem="jfO-RT-Vds" secondAttribute="bottom" constant="46" id="ZNP-bV-5k8"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="Fu6-a9-69c" secondAttribute="bottom" id="a7o-OE-rE2"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Fu6-a9-69c" secondAttribute="trailing" id="cKn-zj-Ny0"/>
+                            <constraint firstItem="jfO-RT-Vds" firstAttribute="centerX" secondItem="KQZ-1w-vlD" secondAttribute="centerX" id="csr-S1-3mb"/>
                             <constraint firstAttribute="centerY" secondItem="KQZ-1w-vlD" secondAttribute="centerY" id="exm-UA-ej4"/>
-                            <constraint firstItem="Heu-kr-RvV" firstAttribute="trailing" secondItem="Ndr-t3-knL" secondAttribute="trailing" id="fd4-xc-Z7T"/>
-                            <constraint firstItem="KQZ-1w-vlD" firstAttribute="top" secondItem="Ia1-K6-d13" secondAttribute="bottom" constant="13" id="mHx-jr-wPY"/>
-                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="Heu-kr-RvV" secondAttribute="bottom" constant="36" id="uFP-2m-Isd"/>
+                            <constraint firstItem="jfO-RT-Vds" firstAttribute="top" secondItem="Fu6-a9-69c" secondAttribute="bottom" id="fyV-oz-HKq"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="3bq-R2-RcN" secondAttribute="trailing" constant="20" id="heQ-MG-izX"/>
+                            <constraint firstItem="3bq-R2-RcN" firstAttribute="leading" secondItem="tsR-hK-woN" secondAttribute="leadingMargin" constant="20" id="mvS-hW-wp7"/>
+                            <constraint firstItem="Fu6-a9-69c" firstAttribute="top" secondItem="tsR-hK-woN" secondAttribute="topMargin" id="nlU-f7-uXX"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="3bq-R2-RcN" secondAttribute="bottom" constant="233" id="sA2-UK-EMA"/>
+                            <constraint firstItem="KQZ-1w-vlD" firstAttribute="centerX" secondItem="tsR-hK-woN" secondAttribute="centerX" id="vIA-ka-6xZ"/>
+                            <constraint firstItem="4ug-Mw-9AY" firstAttribute="top" secondItem="3bq-R2-RcN" secondAttribute="bottom" constant="30" id="zk0-T8-DJB"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="Cmz-qi-CFL"/>
+                                <exclude reference="7X4-iA-OeF"/>
+                                <exclude reference="csr-S1-3mb"/>
+                                <exclude reference="fyV-oz-HKq"/>
                                 <exclude reference="exm-UA-ej4"/>
+                                <exclude reference="XWJ-G8-d1z"/>
+                                <exclude reference="ZNP-bV-5k8"/>
+                                <exclude reference="sA2-UK-EMA"/>
                             </mask>
                         </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="home" id="acW-dT-cKf"/>
+                    <connections>
+                        <outlet property="laxHeader" destination="KQZ-1w-vlD" id="jCy-5G-XDm"/>
+                        <outlet property="transparentRoundedView" destination="3bq-R2-RcN" id="Pxr-w4-686"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="W5J-7L-Pyd" sceneMemberID="firstResponder"/>
             </objects>
@@ -152,7 +226,6 @@
         <!--Pool-->
         <scene sceneID="txU-If-TSt">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="Vaz-jY-52I" sceneMemberID="firstResponder"/>
                 <viewController id="PHP-A7-E3s" userLabel="Pool" customClass="PoolViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="I9q-ob-CO7"/>
@@ -203,6 +276,7 @@
                         <outlet property="poolHeader" destination="pdq-kP-Xab" id="Y6B-sh-AeD"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Vaz-jY-52I" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="161" y="1125"/>
         </scene>
