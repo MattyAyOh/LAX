@@ -8,36 +8,15 @@
 
 #import "MahjongTableViewController.h"
 
-@interface MahjongTableViewController ()
-
-@property (strong, nonatomic) IBOutlet UIView *roomOneView;
-@property (strong, nonatomic) IBOutlet UILabel *roomOneLabel;
-@property (strong, nonatomic) IBOutlet UIView *roomTwoView;
-@property (strong, nonatomic) IBOutlet UILabel *roomTwoLabel;
-@property (strong, nonatomic) IBOutlet UIView *roomThreeView;
-@property (strong, nonatomic) IBOutlet UILabel *roomThreeLabel;
-@property (strong, nonatomic) IBOutlet UIView *roomFourView;
-@property (strong, nonatomic) IBOutlet UILabel *roomFourLabel;
-@property (strong, nonatomic) IBOutlet UIView *roomFiveView;
-@property (strong, nonatomic) IBOutlet UILabel *roomFiveLabel;
-@property (strong, nonatomic) IBOutlet UIView *roomSixView;
-@property (strong, nonatomic) IBOutlet UILabel *roomSixLabel;
-@property (strong, nonatomic) IBOutlet UIView *roomSevenView;
-@property (strong, nonatomic) IBOutlet UILabel *roomSevenLabel;
-@property (strong, nonatomic) IBOutlet UIView *roomEightView;
-@property (strong, nonatomic) IBOutlet UILabel *roomEightLabel;
-
-@end
-
 @implementation MahjongTableViewController
 
 - (void)viewDidLoad
 {
    [super viewDidLoad];
-
-   self.roomThreeLabel.attributedText = [[NSAttributedString alloc] initWithString:@"OCCUPIED SINCE: 6:00PM" attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }];
-   self.roomTwoLabel.attributedText = [[NSAttributedString alloc] initWithString:@"AVAILABLE" attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }];
+   
    self.roomOneLabel.attributedText = [[NSAttributedString alloc] initWithString:@"AVAILABLE" attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }];
+   self.roomTwoLabel.attributedText = [[NSAttributedString alloc] initWithString:@"AVAILABLE" attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }];
+   self.roomThreeLabel.attributedText = [[NSAttributedString alloc] initWithString:@"AVAILABLE" attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }];
    self.roomFourLabel.attributedText = [[NSAttributedString alloc] initWithString:@"AVAILABLE" attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }];
    self.roomFiveLabel.attributedText = [[NSAttributedString alloc] initWithString:@"AVAILABLE" attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }];
    self.roomSixLabel.attributedText = [[NSAttributedString alloc] initWithString:@"AVAILABLE" attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }];

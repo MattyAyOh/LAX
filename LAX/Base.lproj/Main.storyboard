@@ -278,23 +278,61 @@
                                     <constraint firstAttribute="height" constant="14" id="v56-U5-5us"/>
                                 </constraints>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Iu3-vd-IIU">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="CXm-cm-b1o">
+                                        <rect key="frame" x="281" y="257" width="37" height="37"/>
+                                    </activityIndicatorView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading Data..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oMb-fm-ESx">
+                                        <rect key="frame" x="231" y="209" width="138" height="27.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="oMb-fm-ESx" firstAttribute="centerX" secondItem="Iu3-vd-IIU" secondAttribute="centerX" id="2KZ-pG-3Wt"/>
+                                    <constraint firstItem="CXm-cm-b1o" firstAttribute="top" secondItem="oMb-fm-ESx" secondAttribute="bottom" constant="20" id="37W-bI-ve6"/>
+                                    <constraint firstItem="CXm-cm-b1o" firstAttribute="centerY" secondItem="Iu3-vd-IIU" secondAttribute="centerY" id="B6m-jm-Lny"/>
+                                    <constraint firstItem="CXm-cm-b1o" firstAttribute="centerX" secondItem="Iu3-vd-IIU" secondAttribute="centerX" id="sGR-aS-DHg"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="exq-8K-MFZ" firstAttribute="centerX" secondItem="67e-D4-XJC" secondAttribute="centerX" id="0GR-ij-4RR"/>
                             <constraint firstItem="67e-D4-XJC" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leading" id="88U-zc-B4a"/>
+                            <constraint firstItem="Iu3-vd-IIU" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="5" id="9Ni-dW-uxa"/>
                             <constraint firstItem="exq-8K-MFZ" firstAttribute="top" secondItem="tm4-E8-tMM" secondAttribute="bottom" constant="8" symbolic="YES" id="FLQ-uJ-I4w"/>
+                            <constraint firstItem="Iu3-vd-IIU" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="-20" id="KNJ-eV-CD5"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Iu3-vd-IIU" secondAttribute="trailing" constant="-20" id="KaS-x5-VCu"/>
                             <constraint firstItem="tm4-E8-tMM" firstAttribute="centerX" secondItem="exq-8K-MFZ" secondAttribute="centerX" id="cqn-EU-Afd"/>
                             <constraint firstAttribute="trailing" secondItem="67e-D4-XJC" secondAttribute="trailing" id="diM-QS-a4Y"/>
                             <constraint firstItem="exq-8K-MFZ" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="50" id="ePC-Ml-NXX"/>
                             <constraint firstItem="tm4-E8-tMM" firstAttribute="top" secondItem="L7p-HK-0SC" secondAttribute="bottom" constant="10" id="ec5-9X-Nuq"/>
+                            <constraint firstItem="Djb-ko-YwX" firstAttribute="top" secondItem="Iu3-vd-IIU" secondAttribute="bottom" id="gEb-XC-OeS"/>
                             <constraint firstItem="67e-D4-XJC" firstAttribute="top" secondItem="exq-8K-MFZ" secondAttribute="bottom" constant="8" symbolic="YES" id="m7O-oN-Itp"/>
                             <constraint firstItem="67e-D4-XJC" firstAttribute="bottom" secondItem="Djb-ko-YwX" secondAttribute="top" id="r9N-eu-6zo"/>
+                            <constraint firstItem="Iu3-vd-IIU" firstAttribute="leading" secondItem="QS5-Rx-YEW" secondAttribute="leadingMargin" constant="-20" id="t3l-bs-O2N"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="Iu3-vd-IIU" secondAttribute="trailing" constant="-20" id="tEY-4B-pJi"/>
+                            <constraint firstItem="Iu3-vd-IIU" firstAttribute="top" secondItem="QS5-Rx-YEW" secondAttribute="topMargin" id="vwQ-6v-cJY"/>
                         </constraints>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="9Ni-dW-uxa"/>
+                                <exclude reference="KaS-x5-VCu"/>
+                                <exclude reference="t3l-bs-O2N"/>
+                            </mask>
+                        </variation>
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="tile" id="cPa-gy-q4n"/>
                     <connections>
+                        <outlet property="loadingLabel" destination="oMb-fm-ESx" id="ob7-Rx-zmr"/>
+                        <outlet property="loadingView" destination="Iu3-vd-IIU" id="bR5-u6-wrQ"/>
                         <outlet property="mahjongHeader" destination="tm4-E8-tMM" id="8Q7-iK-ghO"/>
+                        <outlet property="progressSpinner" destination="CXm-cm-b1o" id="Kpl-o0-Hz0"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Nw-L8-lE0" sceneMemberID="firstResponder"/>

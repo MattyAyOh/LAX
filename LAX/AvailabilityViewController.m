@@ -20,10 +20,16 @@
 - (void)updateRowWithRecord:(CKRecord*)record ForView:(UIView*)view andLabel:(UILabel*)label
 {
    int hourTaken = [(NSNumber*)[record objectForKey:@"HourTaken"] intValue];
-   if( hourTaken > 24 )
+   
+   if( hourTaken == 66 )
+   {
+      [view setBackgroundColor:[UIColor laxGRAY]];
+      [label setAttributedText:[[NSAttributedString alloc] initWithString:@"CURRENTLY UNAVAILABLE" attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }]];
+   }
+   else if( hourTaken > 24 )
    {
       [view setBackgroundColor:[UIColor laxGREEN]];
-      [label setAttributedText:[[NSAttributedString alloc] initWithString:@"AVAILABLE" attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor blackColor], NSStrokeWidthAttributeName : @-5.0 }]];
+      [label setAttributedText:[[NSAttributedString alloc] initWithString:@"AVAILABLE" attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }]];
    }
    else
    {
