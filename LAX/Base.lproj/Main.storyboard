@@ -59,6 +59,7 @@
                                 <segments>
                                     <segment title="News"/>
                                     <segment title="Business Info"/>
+                                    <segment title="About"/>
                                 </segments>
                                 <color key="tintColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -167,10 +168,18 @@
                                         <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="- Come in Mon-Thu for 20% Off!" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="XgR-KM-PJC">
+                                        <rect key="frame" x="8" y="8" width="504" height="275.5"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
                                 </subviews>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <constraints>
                                     <constraint firstItem="cmc-6l-J8K" firstAttribute="top" secondItem="3bq-R2-RcN" secondAttribute="top" constant="8" id="30O-GU-P00"/>
+                                    <constraint firstItem="XgR-KM-PJC" firstAttribute="top" secondItem="3bq-R2-RcN" secondAttribute="top" constant="8" id="4Wt-E5-b8d"/>
+                                    <constraint firstAttribute="trailing" secondItem="XgR-KM-PJC" secondAttribute="trailing" constant="8" id="8Ap-K6-qyu"/>
                                     <constraint firstItem="CQq-5g-KLi" firstAttribute="centerX" secondItem="3bq-R2-RcN" secondAttribute="centerX" id="DZm-pt-eVT"/>
                                     <constraint firstItem="CQq-5g-KLi" firstAttribute="top" secondItem="Sep-vy-fZm" secondAttribute="bottom" constant="7" id="GUb-VV-jqR"/>
                                     <constraint firstAttribute="trailing" secondItem="cmc-6l-J8K" secondAttribute="trailing" constant="8" id="RHD-xs-2xA"/>
@@ -180,6 +189,8 @@
                                     <constraint firstItem="yxG-mE-ym5" firstAttribute="centerX" secondItem="3bq-R2-RcN" secondAttribute="centerX" id="dII-hE-zap"/>
                                     <constraint firstItem="d9J-Wy-xlW" firstAttribute="top" secondItem="CQq-5g-KLi" secondAttribute="bottom" constant="7" id="dtu-ZP-u1d"/>
                                     <constraint firstItem="d9J-Wy-xlW" firstAttribute="centerX" secondItem="3bq-R2-RcN" secondAttribute="centerX" id="gz7-6Q-uqC"/>
+                                    <constraint firstAttribute="bottom" secondItem="XgR-KM-PJC" secondAttribute="bottom" constant="8" id="kn8-T8-DoG"/>
+                                    <constraint firstItem="XgR-KM-PJC" firstAttribute="leading" secondItem="3bq-R2-RcN" secondAttribute="leading" constant="8" id="m2J-FK-MjJ"/>
                                     <constraint firstItem="Sep-vy-fZm" firstAttribute="centerX" secondItem="3bq-R2-RcN" secondAttribute="centerX" id="pBA-jd-VVZ"/>
                                     <constraint firstItem="Sep-vy-fZm" firstAttribute="top" secondItem="3bq-R2-RcN" secondAttribute="top" constant="10" id="r6t-Sk-xB9"/>
                                 </constraints>
@@ -228,6 +239,7 @@
                     </view>
                     <tabBarItem key="tabBarItem" title="" image="home" id="acW-dT-cKf"/>
                     <connections>
+                        <outlet property="aboutTextView" destination="XgR-KM-PJC" id="0SU-gY-Pqk"/>
                         <outlet property="addressTextView" destination="CQq-5g-KLi" id="Pfi-O4-ag2"/>
                         <outlet property="homeBackgroundView" destination="3bq-R2-RcN" id="UPo-VH-A2U"/>
                         <outlet property="homeSegmentedControl" destination="jfO-RT-Vds" id="fSr-Oe-n5s"/>

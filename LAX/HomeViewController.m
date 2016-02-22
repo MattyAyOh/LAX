@@ -22,6 +22,7 @@
 @property (strong, nonatomic) IBOutlet UIView *homeBackgroundView;
 
 @property (strong, nonatomic) IBOutlet UITextView *newsTextView;
+@property (strong, nonatomic) IBOutlet UITextView *aboutTextView;
 
 @property (strong, nonatomic) IBOutlet UILabel *hoursLabel;
 @property (strong, nonatomic) IBOutlet UITextView *addressTextView;
@@ -63,23 +64,35 @@
    [NSTimer scheduledTimerWithTimeInterval:0.4 target:self selector:@selector(flashStatus:) userInfo:nil repeats:YES];
 }
 
+- (void)hideBusinessInfo:(BOOL)flag
+{
+   [self.hoursLabel setHidden:flag];
+   [self.addressTextView setHidden:flag];
+   [self.phoneTextView setHidden:flag];
+   [self.websiteTextView setHidden:flag];
+}
+
 - (IBAction)homeSegmentedControlChanged:(id)sender
 {
    if( self.homeSegmentedControl.selectedSegmentIndex == 0 )
    {
+      [self.aboutTextView setHidden:YES];
       [self.newsTextView setHidden:NO];
-      [self.hoursLabel setHidden:YES];
-      [self.addressTextView setHidden:YES];
-      [self.phoneTextView setHidden:YES];
-      [self.websiteTextView setHidden:YES];
+      [self hideBusinessInfo:YES];
+
+   }
+   else if( self.homeSegmentedControl.selectedSegmentIndex == 1 )
+   {
+      [self.aboutTextView setHidden:YES];
+      [self.newsTextView setHidden:YES];
+      [self hideBusinessInfo:NO];
    }
    else
    {
+      [self.aboutTextView setHidden:NO];
       [self.newsTextView setHidden:YES];
-      [self.hoursLabel setHidden:NO];
-      [self.addressTextView setHidden:NO];
-      [self.phoneTextView setHidden:NO];
-      [self.websiteTextView setHidden:NO];
+      [self hideBusinessInfo:YES];
+      [self.aboutTextView setText:@"HEYHYE"];
    }
 }
 
