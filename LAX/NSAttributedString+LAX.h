@@ -10,6 +10,6 @@
 
 @interface NSAttributedString (LAX)
 
-- (NSAttributedString*)stringByAddingOutlineOfColor:(UIColor*)color;
+- (NSAttributedString*)stringByAddingOutlineOfColor:(UIColor*)color thickness:(NSNumber*)thick;
 
 @end

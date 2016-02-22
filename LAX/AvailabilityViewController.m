@@ -24,12 +24,14 @@
    if( hourTaken == 66 )
    {
       [view setBackgroundColor:[UIColor laxGRAY]];
-      [label setAttributedText:[[NSAttributedString alloc] initWithString:@"CURRENTLY UNAVAILABLE" attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }]];
+      [label setText:@"Currently Unavailable :("];
+      [label setAttributedText:[label.attributedText stringByAddingOutlineOfColor:[UIColor blackColor] thickness:@-5.0]];
    }
    else if( hourTaken > 24 )
    {
       [view setBackgroundColor:[UIColor laxGREEN]];
-      [label setAttributedText:[[NSAttributedString alloc] initWithString:@"AVAILABLE" attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }]];
+      [label setText:@"Available"];
+      [label setAttributedText:[label.attributedText stringByAddingOutlineOfColor:[UIColor blackColor] thickness:@-5.0]];
    }
    else
    {
@@ -42,7 +44,8 @@
       if( hourTaken == 0 ) hourTaken = 12;
       
       NSString *timeString = [NSString stringWithFormat:@"OCCUPIED SINCE: %d:%02d%@", hourTaken, minuteTaken, ampmString];
-      [label setAttributedText:[[NSAttributedString alloc] initWithString:timeString attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }]];
+      [label setText:timeString];
+      [label setAttributedText:[label.attributedText stringByAddingOutlineOfColor:[UIColor blackColor] thickness:@-5.0]];
    }
 }
 

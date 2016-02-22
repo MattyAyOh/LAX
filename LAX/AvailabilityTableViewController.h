@@ -10,4 +10,7 @@
 
 @interface AvailabilityTableViewController : UITableViewController
 
+- (UIView*)formattedTableHeaderView;
+- (UILabel*)formattedTableHeaderLabel;
+
 @end

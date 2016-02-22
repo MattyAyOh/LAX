@@ -10,11 +10,11 @@
 
 @implementation NSAttributedString (LAX)
 
-- (NSAttributedString*)stringByAddingOutlineOfColor:(UIColor*)color
+- (NSAttributedString*)stringByAddingOutlineOfColor:(UIColor*)color thickness:(NSNumber*)thick
 {
    NSMutableAttributedString *returnString = [self mutableCopy];
    [returnString addAttribute:NSStrokeColorAttributeName value:color range:NSMakeRange(0, self.length)];
-   [returnString addAttribute:NSStrokeWidthAttributeName value:@-3.0 range:NSMakeRange(0, self.length)];
+   [returnString addAttribute:NSStrokeWidthAttributeName value:thick range:NSMakeRange(0, self.length)];
    return returnString;
 }
 

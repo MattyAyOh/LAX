@@ -48,10 +48,10 @@
    self.homeBackgroundView.layer.cornerRadius = 20.0;
    self.homeBackgroundView.backgroundColor = [UIColor laxSemiTransparentGRAY];
 
-   self.newsTextView.attributedText = [self.newsTextView.attributedText stringByAddingOutlineOfColor:[UIColor blackColor]];
-   self.addressTextView.attributedText = [self.addressTextView.attributedText stringByAddingOutlineOfColor:[UIColor blueColor]];
-   self.phoneTextView.attributedText = [self.phoneTextView.attributedText stringByAddingOutlineOfColor:[UIColor blueColor]];
-   self.websiteTextView.attributedText = [self.websiteTextView.attributedText stringByAddingOutlineOfColor:[UIColor blueColor]];
+   self.newsTextView.attributedText = [self.newsTextView.attributedText stringByAddingOutlineOfColor:[UIColor blackColor] thickness:@-3.0];
+   self.addressTextView.attributedText = [self.addressTextView.attributedText stringByAddingOutlineOfColor:[UIColor blueColor] thickness:@-3.0];
+   self.phoneTextView.attributedText = [self.phoneTextView.attributedText stringByAddingOutlineOfColor:[UIColor blueColor] thickness:@-3.0];
+   self.websiteTextView.attributedText = [self.websiteTextView.attributedText stringByAddingOutlineOfColor:[UIColor blueColor] thickness:@-3.0];
    
    if( [[UIScreen mainScreen] bounds].size.height < 550 )
    {
