@@ -55,7 +55,7 @@
           dispatch_async(dispatch_get_main_queue(), ^{
              for( CKRecord *record in results )
              {
-                NSNumber *roomNumber = [record objectForKey:@"RoomNumber"];
+                NSNumber *roomNumber = [record objectForKey:kRoomNumber];
                 if( [roomNumber isEqual: @1] )
                 {
                    [self updateRowWithRecord:record ForView:self.poolTable.roomOneView andLabel:self.poolTable.roomOneLabel];

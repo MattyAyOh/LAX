@@ -19,7 +19,7 @@
 
 - (void)updateRowWithRecord:(CKRecord*)record ForView:(UIView*)view andLabel:(UILabel*)label
 {
-   int hourTaken = [(NSNumber*)[record objectForKey:@"HourTaken"] intValue];
+   int hourTaken = [(NSNumber*)[record objectForKey:kHour] intValue];
    
    if( hourTaken == 66 )
    {
@@ -34,7 +34,7 @@
    else
    {
       [view setBackgroundColor:[UIColor laxGRAY]];
-      int minuteTaken = [(NSNumber*)[record objectForKey:@"MinuteTaken"] intValue];
+      int minuteTaken = [(NSNumber*)[record objectForKey:kMinute] intValue];
       minuteTaken = (minuteTaken > 60) ? 0 : minuteTaken;
       
       NSString *ampmString = (hourTaken > 11) ? @"PM" : @"AM";

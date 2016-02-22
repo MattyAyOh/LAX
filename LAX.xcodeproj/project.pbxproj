@@ -32,6 +32,7 @@
 		3A11F6A71C7A6EB900A9971E /* NSAttributedString+LAX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+LAX.m"; sourceTree = "<group>"; };
 		3A11F6A91C7AA73700A9971E /* AvailabilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvailabilityViewController.h; sourceTree = "<group>"; };
 		3A11F6AA1C7AA73700A9971E /* AvailabilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvailabilityViewController.m; sourceTree = "<group>"; };
+		3A11F6AC1C7ABB1D00A9971E /* constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = constants.h; sourceTree = "<group>"; };
 		3A338D621C76B5DB00985DEF /* KaraokeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KaraokeViewController.h; sourceTree = "<group>"; };
 		3A338D631C76B5DB00985DEF /* KaraokeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KaraokeViewController.m; sourceTree = "<group>"; };
 		3A338D651C76B62500985DEF /* KaraokeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KaraokeTableViewController.h; sourceTree = "<group>"; };
@@ -84,6 +85,7 @@
 				3A338D7B1C79892100985DEF /* UIColor+LAX.m */,
 				3A11F6A61C7A6EB900A9971E /* NSAttributedString+LAX.h */,
 				3A11F6A71C7A6EB900A9971E /* NSAttributedString+LAX.m */,
+				3A11F6AC1C7ABB1D00A9971E /* constants.h */,
 			);
 			name = Custom;
 			sourceTree = "<group>";
