@@ -22,8 +22,6 @@
 - (void)viewDidLoad
 {
    [super viewDidLoad];
-   [self.loadingView setBackgroundColor:[UIColor laxVeryLightTransparentGRAY]];
-   self.view.backgroundColor = [UIColor laxRED];
    self.karaokeHeader.shadowColor = [UIColor laxGRAY];
    self.karaokeHeader.shadowOffset = CGSizeMake(0,2);
 }

@@ -11,6 +11,11 @@
 
 @implementation AvailabilityTableViewController
 
+-(void)viewDidLoad
+{
+   [super viewDidLoad];
+   [self.view setBackgroundColor:[UIColor laxRED]];
+}
 -(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
    return 38.0;

@@ -8,30 +8,15 @@
 
 #import "PoolTableViewController.h"
 
-@interface PoolTableViewController ()
-
-@property (strong, nonatomic) IBOutlet UIView *roomOneView;
-@property (strong, nonatomic) IBOutlet UILabel *roomOneLabel;
-@property (strong, nonatomic) IBOutlet UIView *roomTwoView;
-@property (strong, nonatomic) IBOutlet UILabel *roomTwoLabel;
-@property (strong, nonatomic) IBOutlet UIView *roomThreeView;
-@property (strong, nonatomic) IBOutlet UILabel *roomThreeLabel;
-@property (strong, nonatomic) IBOutlet UIView *roomFourView;
-@property (strong, nonatomic) IBOutlet UILabel *roomFourLabel;
-
-@end
-
 @implementation PoolTableViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
    [super viewDidLoad];
-   
-   [self.view setBackgroundColor:[UIColor laxRED]];
-   [[self roomTwoView] setBackgroundColor:[UIColor laxGRAY]];
-   [[self roomThreeView] setBackgroundColor:[UIColor laxGRAY]];
+
    self.roomOneLabel.attributedText = [[NSAttributedString alloc] initWithString:@"AVAILABLE" attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }];
-   self.roomTwoLabel.attributedText = [[NSAttributedString alloc] initWithString:@"OCCUPIED SINCE: 11:10PM" attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }];
-   self.roomThreeLabel.attributedText = [[NSAttributedString alloc] initWithString:@"OCCUPIED SINCE: 8:00PM" attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }];
+   self.roomTwoLabel.attributedText = [[NSAttributedString alloc] initWithString:@"AVAILABLE" attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }];
+   self.roomThreeLabel.attributedText = [[NSAttributedString alloc] initWithString:@"AVAILABLE" attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }];
    self.roomFourLabel.attributedText = [[NSAttributedString alloc] initWithString:@"AVAILABLE" attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }];
 }
 

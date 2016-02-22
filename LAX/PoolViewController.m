@@ -7,20 +7,76 @@
 //
 
 #import "PoolViewController.h"
+#import "PoolTableViewController.h"
 
 @interface PoolViewController ()
 
 @property IBOutlet UILabel *poolHeader;
+@property PoolTableViewController *poolTable;
 
 @end
 
 @implementation PoolViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
    [super viewDidLoad];
-   self.view.backgroundColor = [UIColor laxRED];
-   
    self.poolHeader.shadowColor = [UIColor laxGRAY];
-   self.poolHeader.shadowOffset = CGSizeMake(0,2);}
+   self.poolHeader.shadowOffset = CGSizeMake(0,2);
+}
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
+{
+   NSString * segueName = segue.identifier;
+   if ([segueName isEqualToString: @"poolSegue"]) {
+      self.poolTable = (PoolTableViewController*)[segue destinationViewController];
+   }
+}
+
+-(void)viewDidAppear:(BOOL)animated
+{
+   [self.progressSpinner setHidden:NO];
+   [self.loadingLabel setText:@"LOADING..."];
+   [self.loadingLabel setTextColor:[UIColor whiteColor]];
+   [self.loadingView setHidden:NO];
+   CKDatabase *publicDatabase = [[CKContainer defaultContainer] publicCloudDatabase];
+   
+   NSPredicate *predicate = [NSPredicate predicateWithValue:YES];
+   CKQuery *query = [[CKQuery alloc] initWithRecordType:@"Pool" predicate:predicate];
+   
+   [publicDatabase performQuery:query
+                   inZoneWithID:nil
+              completionHandler:^(NSArray *results, NSError *error)
+    {
+       if (error) {
+          [self displayLoadingError];
+       }
+       else {
+          dispatch_async(dispatch_get_main_queue(), ^{
+             for( CKRecord *record in results )
+             {
+                NSNumber *roomNumber = [record objectForKey:@"RoomNumber"];
+                if( [roomNumber isEqual: @1] )
+                {
+                   [self updateRowWithRecord:record ForView:self.poolTable.roomOneView andLabel:self.poolTable.roomOneLabel];
+                }
+                else if( [roomNumber isEqual: @2] )
+                {
+                   [self updateRowWithRecord:record ForView:self.poolTable.roomTwoView andLabel:self.poolTable.roomTwoLabel];
+                }
+                else if( [roomNumber isEqual: @3] )
+                {
+                   [self updateRowWithRecord:record ForView:self.poolTable.roomThreeView andLabel:self.poolTable.roomThreeLabel];
+                }
+                else if( [roomNumber isEqual: @4] )
+                {
+                   [self updateRowWithRecord:record ForView:self.poolTable.roomFourView andLabel:self.poolTable.roomFourLabel];
+                }
+             }
+             [self.loadingView setHidden:YES];
+          });
+       }
+    }];
+}
 
 @end

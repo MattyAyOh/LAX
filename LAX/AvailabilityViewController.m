@@ -10,6 +10,13 @@
 
 @implementation AvailabilityViewController
 
+- (void)viewDidLoad
+{
+   [super viewDidLoad];
+   self.view.backgroundColor = [UIColor laxRED];
+   [self.loadingView setBackgroundColor:[UIColor laxVeryLightTransparentGRAY]];
+}
+
 - (void)updateRowWithRecord:(CKRecord*)record ForView:(UIView*)view andLabel:(UILabel*)label
 {
    int hourTaken = [(NSNumber*)[record objectForKey:@"HourTaken"] intValue];

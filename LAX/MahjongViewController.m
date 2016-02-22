@@ -16,10 +16,9 @@
 
 @implementation MahjongViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
    [super viewDidLoad];
-   self.view.backgroundColor = [UIColor laxRED];
-   
    self.mahjongHeader.shadowColor = [UIColor laxGRAY];
    self.mahjongHeader.shadowOffset = CGSizeMake(0,2);
 }

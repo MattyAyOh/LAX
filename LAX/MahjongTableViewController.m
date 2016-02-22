@@ -31,11 +31,10 @@
 
 @implementation MahjongTableViewController
 
-- (void)viewDidLoad {
+- (void)viewDidLoad
+{
    [super viewDidLoad];
-   
-   [self.view setBackgroundColor:[UIColor laxRED]];
-   [[self roomThreeView] setBackgroundColor:[UIColor laxGRAY]];
+
    self.roomThreeLabel.attributedText = [[NSAttributedString alloc] initWithString:@"OCCUPIED SINCE: 6:00PM" attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }];
    self.roomTwoLabel.attributedText = [[NSAttributedString alloc] initWithString:@"AVAILABLE" attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }];
    self.roomOneLabel.attributedText = [[NSAttributedString alloc] initWithString:@"AVAILABLE" attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }];
@@ -60,28 +59,28 @@
    tempLabel.font = [UIFont boldSystemFontOfSize:20.0];
    switch (section) {
       case 0:
-         tempLabel.text = @"ROOM 1 ($24/hr)";
+         tempLabel.text = @"ROOM 1 ($20/hr)";
          break;
       case 1:
-         tempLabel.text = @"ROOM 2 ($24/hr)";
+         tempLabel.text = @"ROOM 2 ($20/hr)";
          break;
       case 2:
-         tempLabel.text = @"ROOM 3 ($24/hr)";
+         tempLabel.text = @"ROOM 3 ($20/hr)";
          break;
       case 3:
-         tempLabel.text = @"ROOM 4 [川麻] ($24/hr)";
+         tempLabel.text = @"ROOM 4 [川麻] ($20/hr)";
          break;
       case 4:
-         tempLabel.text = @"ROOM 5 ($24/hr)";
+         tempLabel.text = @"ROOM 5 ($20/hr)";
          break;
       case 5:
-         tempLabel.text = @"ROOM 6 [川麻] ($24/hr)";
+         tempLabel.text = @"ROOM 6 [川麻] ($20/hr)";
          break;
       case 6:
-         tempLabel.text = @"ROOM 7 ($24/hr)";
+         tempLabel.text = @"ROOM 7 ($20/hr)";
          break;
       case 7:
-         tempLabel.text = @"ROOM 8 ($24/hr)";
+         tempLabel.text = @"ROOM 8 ($20/hr)";
          break;
       default:
          tempLabel.text = @"ERROR LOADING NAME";
