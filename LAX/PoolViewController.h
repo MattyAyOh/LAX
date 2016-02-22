@@ -7,7 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AvailabilityViewController.h"
 
-@interface PoolViewController : UIViewController
+
+@interface PoolViewController : AvailabilityViewController
 
 @end

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AvailabilityViewController.h"
 
-@interface MahjongViewController : UIViewController
+@interface MahjongViewController : AvailabilityViewController
 
 @end

@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AvailabilityViewController.h"
 
-@interface KaraokeViewController : UIViewController
+@interface KaraokeViewController : AvailabilityViewController
 
 @end

@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3A11F6A81C7A6EB900A9971E /* NSAttributedString+LAX.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A11F6A71C7A6EB900A9971E /* NSAttributedString+LAX.m */; };
+		3A11F6AB1C7AA73700A9971E /* AvailabilityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A11F6AA1C7AA73700A9971E /* AvailabilityViewController.m */; };
 		3A338D641C76B5DB00985DEF /* KaraokeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A338D631C76B5DB00985DEF /* KaraokeViewController.m */; };
 		3A338D671C76B62500985DEF /* KaraokeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A338D661C76B62500985DEF /* KaraokeTableViewController.m */; };
 		3A338D6A1C76B63A00985DEF /* MahjongTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A338D691C76B63A00985DEF /* MahjongTableViewController.m */; };
@@ -29,6 +30,8 @@
 		3A11F69F1C7A397C00A9971E /* PrefixHeader.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
 		3A11F6A61C7A6EB900A9971E /* NSAttributedString+LAX.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSAttributedString+LAX.h"; sourceTree = "<group>"; };
 		3A11F6A71C7A6EB900A9971E /* NSAttributedString+LAX.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSAttributedString+LAX.m"; sourceTree = "<group>"; };
+		3A11F6A91C7AA73700A9971E /* AvailabilityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvailabilityViewController.h; sourceTree = "<group>"; };
+		3A11F6AA1C7AA73700A9971E /* AvailabilityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvailabilityViewController.m; sourceTree = "<group>"; };
 		3A338D621C76B5DB00985DEF /* KaraokeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KaraokeViewController.h; sourceTree = "<group>"; };
 		3A338D631C76B5DB00985DEF /* KaraokeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = KaraokeViewController.m; sourceTree = "<group>"; };
 		3A338D651C76B62500985DEF /* KaraokeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = KaraokeTableViewController.h; sourceTree = "<group>"; };
@@ -105,6 +108,8 @@
 			children = (
 				3A7F5E441C6FB14800B0F5CB /* HomeViewController.h */,
 				3A7F5E451C6FB14800B0F5CB /* HomeViewController.m */,
+				3A11F6A91C7AA73700A9971E /* AvailabilityViewController.h */,
+				3A11F6AA1C7AA73700A9971E /* AvailabilityViewController.m */,
 				3A7F5E3E1C6FB09600B0F5CB /* MahjongViewController.h */,
 				3A7F5E3F1C6FB09600B0F5CB /* MahjongViewController.m */,
 				3A7F5E411C6FB0A400B0F5CB /* PoolViewController.h */,
@@ -238,6 +243,7 @@
 				3A7F5E431C6FB0A400B0F5CB /* PoolViewController.m in Sources */,
 				3A3B13771C62EA3B000E0732 /* main.m in Sources */,
 				3A7F5E491C755DAE00B0F5CB /* AvailabilityTableViewController.m in Sources */,
+				3A11F6AB1C7AA73700A9971E /* AvailabilityViewController.m in Sources */,
 				3A338D671C76B62500985DEF /* KaraokeTableViewController.m in Sources */,
 				3A338D6A1C76B63A00985DEF /* MahjongTableViewController.m in Sources */,
 				3A7F5E401C6FB09600B0F5CB /* MahjongViewController.m in Sources */,
