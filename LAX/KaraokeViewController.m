@@ -13,6 +13,9 @@
 @interface KaraokeViewController ()
 
 @property (strong, nonatomic) IBOutlet UIView *loadingView;
+@property (strong, nonatomic) IBOutlet UILabel *loadingLabel;
+@property (strong, nonatomic) IBOutlet UIActivityIndicatorView *progressSpinner;
+
 @property IBOutlet UILabel *karaokeHeader;
 @property KaraokeTableViewController *karaokeTable;
 
@@ -39,6 +42,9 @@
 
 -(void)viewDidAppear:(BOOL)animated
 {
+   [self.progressSpinner setHidden:NO];
+   [self.loadingLabel setText:@"LOADING..."];
+   [self.loadingLabel setTextColor:[UIColor whiteColor]];
    [self.loadingView setHidden:NO];
    CKDatabase *publicDatabase = [[CKContainer defaultContainer] publicCloudDatabase];
    
@@ -50,12 +56,9 @@
               completionHandler:^(NSArray *results, NSError *error)
     {
        if (error) {
-          // Error handling for failed fetch from public database
-          NSLog(@"FAIL");
+          [self displayLoadingError];
        }
        else {
-          // Display the fetched record
-          NSLog(@"SUCCESS: %@", results);
           dispatch_async(dispatch_get_main_queue(), ^{
              for( CKRecord *record in results )
              {
@@ -95,6 +98,7 @@
    {
       [view setBackgroundColor:[UIColor laxGRAY]];
       int minuteTaken = [(NSNumber*)[record objectForKey:@"MinuteTaken"] intValue];
+      minuteTaken = (minuteTaken > 60) ? 0 : minuteTaken;
       
       NSString *ampmString = (hourTaken > 11) ? @"PM" : @"AM";
       hourTaken = hourTaken % 12;
@@ -103,6 +107,15 @@
       NSString *timeString = [NSString stringWithFormat:@"OCCUPIED SINCE: %d:%02d%@", hourTaken, minuteTaken, ampmString];
       [label setAttributedText:[[NSAttributedString alloc] initWithString:timeString attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }]];
    }
+}
+
+- (void)displayLoadingError
+{
+   dispatch_async(dispatch_get_main_queue(), ^{
+      [self.progressSpinner setHidden:YES];
+      [self.loadingLabel setText:@"LOAD FAILED :("];
+      [self.loadingLabel setTextColor:[UIColor laxRED]];
+   });
 }
 
 @end

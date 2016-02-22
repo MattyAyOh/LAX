@@ -584,7 +584,9 @@
                     <tabBarItem key="tabBarItem" title="" image="mic" id="Q4Q-Rs-eE3"/>
                     <connections>
                         <outlet property="karaokeHeader" destination="PmS-e8-IaK" id="dnu-P2-RWk"/>
+                        <outlet property="loadingLabel" destination="BZn-Oe-FFV" id="HF8-Sy-qzX"/>
                         <outlet property="loadingView" destination="mix-oC-oxm" id="nB9-qs-rlK"/>
+                        <outlet property="progressSpinner" destination="zWB-Ci-RU6" id="xxx-nQ-zZv"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Npd-W5-7Kw" sceneMemberID="firstResponder"/>

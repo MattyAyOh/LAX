@@ -13,7 +13,6 @@
 - (void)viewDidLoad {
    [super viewDidLoad];
    
-   NSLog(@"HEYHEY");
    [self.view setBackgroundColor:[UIColor laxRED]];
    self.roomOneLabel.attributedText = [[NSAttributedString alloc] initWithString:@"LOADING..." attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }];
    self.roomTwoLabel.attributedText = [[NSAttributedString alloc] initWithString:@"LOADING..." attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }];
