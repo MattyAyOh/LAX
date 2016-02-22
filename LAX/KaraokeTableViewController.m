@@ -8,30 +8,17 @@
 
 #import "KaraokeTableViewController.h"
 
-@interface KaraokeTableViewController ()
-
-@property (strong, nonatomic) IBOutlet UIView *roomOneView;
-@property (strong, nonatomic) IBOutlet UILabel *roomOneLabel;
-@property (strong, nonatomic) IBOutlet UIView *roomTwoView;
-@property (strong, nonatomic) IBOutlet UILabel *roomTwoLabel;
-@property (strong, nonatomic) IBOutlet UIView *roomThreeView;
-@property (strong, nonatomic) IBOutlet UILabel *roomThreeLabel;
-@property (strong, nonatomic) IBOutlet UIView *roomFourView;
-@property (strong, nonatomic) IBOutlet UILabel *roomFourLabel;
-
-@end
-
 @implementation KaraokeTableViewController
 
 - (void)viewDidLoad {
    [super viewDidLoad];
    
+   NSLog(@"HEYHEY");
    [self.view setBackgroundColor:[UIColor laxRED]];
-   [[self roomOneView] setBackgroundColor:[UIColor laxGRAY]];
-   self.roomOneLabel.attributedText = [[NSAttributedString alloc] initWithString:@"OCCUPIED SINCE: 10:30PM" attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }];
-   self.roomTwoLabel.attributedText = [[NSAttributedString alloc] initWithString:@"AVAILABLE" attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }];
-   self.roomThreeLabel.attributedText = [[NSAttributedString alloc] initWithString:@"AVAILABLE" attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }];
-   self.roomFourLabel.attributedText = [[NSAttributedString alloc] initWithString:@"AVAILABLE" attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }];
+   self.roomOneLabel.attributedText = [[NSAttributedString alloc] initWithString:@"LOADING..." attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }];
+   self.roomTwoLabel.attributedText = [[NSAttributedString alloc] initWithString:@"LOADING..." attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }];
+   self.roomThreeLabel.attributedText = [[NSAttributedString alloc] initWithString:@"LOADING..." attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }];
+   self.roomFourLabel.attributedText = [[NSAttributedString alloc] initWithString:@"LOADING..." attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }];
 }
 
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
@@ -43,21 +30,21 @@
    tempLabel.backgroundColor=[UIColor clearColor];
    tempLabel.shadowColor = [UIColor laxGRAY];
    tempLabel.shadowOffset = CGSizeMake(0,2);
-   tempLabel.textColor = [UIColor whiteColor]; //here you can change the text color of header.
+   tempLabel.textColor = [UIColor whiteColor];
    tempLabel.font = [UIFont fontWithName:@"Helvetica" size:20.0];
    tempLabel.font = [UIFont boldSystemFontOfSize:20.0];
    switch (section) {
       case 0:
-         tempLabel.text = @"ROOM 1";
+         tempLabel.text = @"ROOM 1 ($28/hr)";
          break;
       case 1:
-         tempLabel.text = @"ROOM 2";
+         tempLabel.text = @"ROOM 2 ($28/hr)";
          break;
       case 2:
-         tempLabel.text = @"ROOM 3";
+         tempLabel.text = @"ROOM 3 ($28/hr)";
          break;
       case 3:
-         tempLabel.text = @"BIG ROOM";
+         tempLabel.text = @"BIG ROOM ($42/hr)";
          break;
       default:
          tempLabel.text = @"ERROR LOADING NAME";

@@ -11,7 +11,9 @@
 @interface UIColor (LAX)
 
 +(UIColor*)laxRED;
++(UIColor*)laxGREEN;
 +(UIColor*)laxGRAY;
++(UIColor*)laxVeryLightTransparentGRAY;
 +(UIColor*)laxLightTransparentGRAY;
 +(UIColor*)laxSemiTransparentGRAY;
 

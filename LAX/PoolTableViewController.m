@@ -49,16 +49,16 @@
    tempLabel.font = [UIFont boldSystemFontOfSize:20.0];
    switch (section) {
       case 0:
-         tempLabel.text = @"TABLE 1";
+         tempLabel.text = @"TABLE 1 ($10/hr)";
          break;
       case 1:
-         tempLabel.text = @"TABLE 2";
+         tempLabel.text = @"TABLE 2 ($10/hr)";
          break;
       case 2:
-         tempLabel.text = @"TABLE 3";
+         tempLabel.text = @"TABLE 3 ($10/hr)";
          break;
       case 3:
-         tempLabel.text = @"TABLE 4";
+         tempLabel.text = @"TABLE 4 ($10/hr)";
          break;
       default:
          tempLabel.text = @"ERROR LOADING NAME";

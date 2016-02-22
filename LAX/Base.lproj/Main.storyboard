@@ -525,7 +525,7 @@
                             <containerView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FEc-WB-QBs">
                                 <rect key="frame" x="0.0" y="102" width="600" height="449"/>
                                 <connections>
-                                    <segue destination="5gK-JZ-m6S" kind="embed" id="aio-ti-sVt"/>
+                                    <segue destination="5gK-JZ-m6S" kind="embed" identifier="karaokeSegue" id="aio-ti-sVt"/>
                                 </connections>
                             </containerView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="horizontalBar" translatesAutoresizingMaskIntoConstraints="NO" id="PGP-6V-n2S">
@@ -534,12 +534,37 @@
                                     <constraint firstAttribute="height" constant="14" id="8nl-sf-5bV"/>
                                 </constraints>
                             </imageView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="mix-oC-oxm">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                                <subviews>
+                                    <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" hidesWhenStopped="YES" animating="YES" style="whiteLarge" translatesAutoresizingMaskIntoConstraints="NO" id="zWB-Ci-RU6">
+                                        <rect key="frame" x="282" y="257" width="37" height="37"/>
+                                    </activityIndicatorView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Loading Data..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BZn-Oe-FFV">
+                                        <rect key="frame" x="231.5" y="209.5" width="138" height="27.5"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                        <color key="textColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <constraints>
+                                    <constraint firstItem="BZn-Oe-FFV" firstAttribute="centerX" secondItem="mix-oC-oxm" secondAttribute="centerX" id="981-d2-zlm"/>
+                                    <constraint firstItem="zWB-Ci-RU6" firstAttribute="centerY" secondItem="mix-oC-oxm" secondAttribute="centerY" id="U4T-cs-6xq"/>
+                                    <constraint firstItem="zWB-Ci-RU6" firstAttribute="top" secondItem="BZn-Oe-FFV" secondAttribute="bottom" constant="20" id="i5z-zr-aKq"/>
+                                    <constraint firstItem="zWB-Ci-RU6" firstAttribute="centerX" secondItem="mix-oC-oxm" secondAttribute="centerX" id="xoM-ra-C9T"/>
+                                </constraints>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="mix-oC-oxm" firstAttribute="top" secondItem="v60-HZ-3I8" secondAttribute="top" id="0fH-lh-IEj"/>
+                            <constraint firstItem="mix-oC-oxm" firstAttribute="trailing" secondItem="FEc-WB-QBs" secondAttribute="trailing" id="2SC-QT-5sd"/>
+                            <constraint firstItem="mix-oC-oxm" firstAttribute="bottom" secondItem="arE-xq-qlp" secondAttribute="top" id="CCw-7F-SoC"/>
                             <constraint firstItem="PGP-6V-n2S" firstAttribute="top" secondItem="PmS-e8-IaK" secondAttribute="bottom" constant="8" symbolic="YES" id="HNq-GW-LWf"/>
                             <constraint firstItem="PmS-e8-IaK" firstAttribute="centerX" secondItem="v60-HZ-3I8" secondAttribute="centerX" id="ITW-ml-OHE"/>
                             <constraint firstItem="FEc-WB-QBs" firstAttribute="centerX" secondItem="PGP-6V-n2S" secondAttribute="centerX" id="JBu-w0-OfJ"/>
+                            <constraint firstItem="mix-oC-oxm" firstAttribute="top" secondItem="PGP-6V-n2S" secondAttribute="bottom" id="M6Z-bn-Cun"/>
                             <constraint firstItem="PGP-6V-n2S" firstAttribute="centerX" secondItem="PmS-e8-IaK" secondAttribute="centerX" id="Ph5-2y-khm"/>
                             <constraint firstItem="FEc-WB-QBs" firstAttribute="top" secondItem="PGP-6V-n2S" secondAttribute="bottom" constant="8" symbolic="YES" id="Umq-4B-HGR"/>
                             <constraint firstItem="FEc-WB-QBs" firstAttribute="leading" secondItem="v60-HZ-3I8" secondAttribute="leading" id="Y5c-bj-NYQ"/>
@@ -547,9 +572,11 @@
                             <constraint firstItem="FEc-WB-QBs" firstAttribute="bottom" secondItem="arE-xq-qlp" secondAttribute="top" id="f6H-vs-Oea"/>
                             <constraint firstItem="PGP-6V-n2S" firstAttribute="leading" secondItem="v60-HZ-3I8" secondAttribute="leadingMargin" constant="50" id="htm-Kv-tD6"/>
                             <constraint firstItem="FEc-WB-QBs" firstAttribute="top" secondItem="PmS-e8-IaK" secondAttribute="bottom" constant="15" id="wWh-z7-nCT"/>
+                            <constraint firstItem="mix-oC-oxm" firstAttribute="leading" secondItem="FEc-WB-QBs" secondAttribute="leading" id="xgo-Xt-dCr"/>
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="M6Z-bn-Cun"/>
                                 <exclude reference="wWh-z7-nCT"/>
                             </mask>
                         </variation>
@@ -557,6 +584,7 @@
                     <tabBarItem key="tabBarItem" title="" image="mic" id="Q4Q-Rs-eE3"/>
                     <connections>
                         <outlet property="karaokeHeader" destination="PmS-e8-IaK" id="dnu-P2-RWk"/>
+                        <outlet property="loadingView" destination="mix-oC-oxm" id="nB9-qs-rlK"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Npd-W5-7Kw" sceneMemberID="firstResponder"/>
@@ -816,6 +844,48 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
+                            <tableViewSection headerTitle="ROOM 7" id="wpn-8s-28h">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AvailabilityCell" id="yLN-WH-aH1">
+                                        <rect key="frame" x="0.0" y="613.5" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="yLN-WH-aH1" id="aYA-ok-245">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Available" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tah-fr-20Q">
+                                                    <rect key="frame" x="31" y="11.5" width="538" height="21"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.081732980910000003" green="0.77481716869999995" blue="0.38386797900000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
+                            <tableViewSection headerTitle="ROOM 8" id="ASc-si-PQP">
+                                <cells>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="AvailabilityCell" id="gcJ-U1-Sf0">
+                                        <rect key="frame" x="0.0" y="707.5" width="600" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="gcJ-U1-Sf0" id="PCb-pT-wLp">
+                                            <rect key="frame" x="0.0" y="0.0" width="600" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Available" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="K6P-U9-vV5">
+                                                    <rect key="frame" x="31" y="11.5" width="538" height="21"/>
+                                                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
+                                                    <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <color key="backgroundColor" red="0.081732980910000003" green="0.77481716869999995" blue="0.38386797900000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </cells>
+                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="9Ez-WV-xA3" id="bc0-dQ-ehG"/>
@@ -823,12 +893,16 @@
                         </connections>
                     </tableView>
                     <connections>
+                        <outlet property="roomEightLabel" destination="K6P-U9-vV5" id="ohM-27-dfd"/>
+                        <outlet property="roomEightView" destination="PCb-pT-wLp" id="UzI-7G-Msh"/>
                         <outlet property="roomFiveLabel" destination="fze-Il-6Qf" id="Hyk-Fn-btf"/>
                         <outlet property="roomFiveView" destination="Q7T-Ok-hSy" id="hXc-gC-Bsd"/>
                         <outlet property="roomFourLabel" destination="dXO-QA-koE" id="T0o-uI-Eot"/>
                         <outlet property="roomFourView" destination="45E-zF-SwG" id="Rwu-w6-R1H"/>
                         <outlet property="roomOneLabel" destination="enw-vb-iXk" id="Agd-XM-XYk"/>
                         <outlet property="roomOneView" destination="z5G-U3-9jW" id="kM4-VY-YZw"/>
+                        <outlet property="roomSevenLabel" destination="tah-fr-20Q" id="1YK-ic-LvN"/>
+                        <outlet property="roomSevenView" destination="aYA-ok-245" id="0Ib-fR-KDK"/>
                         <outlet property="roomSixLabel" destination="Qxq-Yb-rsP" id="M0B-Sa-6R9"/>
                         <outlet property="roomSixView" destination="QWS-Ra-1ES" id="Rch-UB-Uua"/>
                         <outlet property="roomThreeLabel" destination="2ey-fx-tbK" id="lkq-CP-RqM"/>

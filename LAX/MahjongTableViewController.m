@@ -22,6 +22,10 @@
 @property (strong, nonatomic) IBOutlet UILabel *roomFiveLabel;
 @property (strong, nonatomic) IBOutlet UIView *roomSixView;
 @property (strong, nonatomic) IBOutlet UILabel *roomSixLabel;
+@property (strong, nonatomic) IBOutlet UIView *roomSevenView;
+@property (strong, nonatomic) IBOutlet UILabel *roomSevenLabel;
+@property (strong, nonatomic) IBOutlet UIView *roomEightView;
+@property (strong, nonatomic) IBOutlet UILabel *roomEightLabel;
 
 @end
 
@@ -38,6 +42,8 @@
    self.roomFourLabel.attributedText = [[NSAttributedString alloc] initWithString:@"AVAILABLE" attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }];
    self.roomFiveLabel.attributedText = [[NSAttributedString alloc] initWithString:@"AVAILABLE" attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }];
    self.roomSixLabel.attributedText = [[NSAttributedString alloc] initWithString:@"AVAILABLE" attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }];
+   self.roomSevenLabel.attributedText = [[NSAttributedString alloc] initWithString:@"AVAILABLE" attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }];
+   self.roomEightLabel.attributedText = [[NSAttributedString alloc] initWithString:@"AVAILABLE" attributes:@{ NSStrokeColorAttributeName : [UIColor blackColor], NSForegroundColorAttributeName : [UIColor whiteColor], NSStrokeWidthAttributeName : @-5.0 }];
 }
 
 -(UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section
@@ -54,22 +60,28 @@
    tempLabel.font = [UIFont boldSystemFontOfSize:20.0];
    switch (section) {
       case 0:
-         tempLabel.text = @"ROOM 1";
+         tempLabel.text = @"ROOM 1 ($24/hr)";
          break;
       case 1:
-         tempLabel.text = @"ROOM 2";
+         tempLabel.text = @"ROOM 2 ($24/hr)";
          break;
       case 2:
-         tempLabel.text = @"ROOM 3";
+         tempLabel.text = @"ROOM 3 ($24/hr)";
          break;
       case 3:
-         tempLabel.text = @"ROOM 4 [川麻]";
+         tempLabel.text = @"ROOM 4 [川麻] ($24/hr)";
          break;
       case 4:
-         tempLabel.text = @"ROOM 5";
+         tempLabel.text = @"ROOM 5 ($24/hr)";
          break;
       case 5:
-         tempLabel.text = @"ROOM 6 [川麻]";
+         tempLabel.text = @"ROOM 6 [川麻] ($24/hr)";
+         break;
+      case 6:
+         tempLabel.text = @"ROOM 7 ($24/hr)";
+         break;
+      case 7:
+         tempLabel.text = @"ROOM 8 ($24/hr)";
          break;
       default:
          tempLabel.text = @"ERROR LOADING NAME";
