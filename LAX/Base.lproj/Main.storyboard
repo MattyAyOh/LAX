@@ -18,7 +18,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paintRandomWhite" translatesAutoresizingMaskIntoConstraints="NO" id="Fu6-a9-69c">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paintBorderBlack" translatesAutoresizingMaskIntoConstraints="NO" id="Fu6-a9-69c">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="144" id="UjD-75-2qh"/>
@@ -278,7 +278,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paintRandomBlack" translatesAutoresizingMaskIntoConstraints="NO" id="7g5-P4-byw">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paintSplatterBlack" translatesAutoresizingMaskIntoConstraints="NO" id="7g5-P4-byw">
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
                             </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Mahjong" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="tm4-E8-tMM">
@@ -411,6 +411,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paintMiddleBlack" translatesAutoresizingMaskIntoConstraints="NO" id="qEL-ES-5DV">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Pool" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="pdq-kP-Xab">
                                 <rect key="frame" x="189" y="30" width="222" height="42"/>
                                 <constraints>
@@ -457,6 +460,7 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="bOA-4l-gsJ" firstAttribute="top" secondItem="qEL-ES-5DV" secondAttribute="bottom" id="2jE-RB-j96"/>
                             <constraint firstItem="pdq-kP-Xab" firstAttribute="top" secondItem="I9q-ob-CO7" secondAttribute="bottom" constant="10" id="3mi-DR-HZH"/>
                             <constraint firstItem="Z1w-Ac-zkc" firstAttribute="leading" secondItem="W5W-j8-43N" secondAttribute="leadingMargin" constant="-20" id="3od-qM-TH3"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Z1w-Ac-zkc" secondAttribute="trailing" id="6Nb-NN-y8x"/>
@@ -473,8 +477,11 @@
                             <constraint firstItem="Z1w-Ac-zkc" firstAttribute="leading" secondItem="W5W-j8-43N" secondAttribute="leadingMargin" id="iSL-Nd-w0n"/>
                             <constraint firstItem="Z1w-Ac-zkc" firstAttribute="top" secondItem="I9q-ob-CO7" secondAttribute="bottom" id="j1t-LT-5KZ"/>
                             <constraint firstAttribute="bottomMargin" secondItem="Z1w-Ac-zkc" secondAttribute="bottom" id="l7V-CN-QCU"/>
+                            <constraint firstItem="qEL-ES-5DV" firstAttribute="leading" secondItem="W5W-j8-43N" secondAttribute="leading" id="pco-iP-aCB"/>
+                            <constraint firstAttribute="trailing" secondItem="qEL-ES-5DV" secondAttribute="trailing" id="woo-ob-djg"/>
                             <constraint firstItem="Z1w-Ac-zkc" firstAttribute="top" secondItem="W5W-j8-43N" secondAttribute="topMargin" id="wyE-x8-1s0"/>
                             <constraint firstItem="6hT-3P-jdn" firstAttribute="leading" secondItem="W5W-j8-43N" secondAttribute="leading" id="x53-RD-V14"/>
+                            <constraint firstItem="qEL-ES-5DV" firstAttribute="top" secondItem="W5W-j8-43N" secondAttribute="top" id="xON-AU-V24"/>
                             <constraint firstAttribute="trailingMargin" secondItem="Z1w-Ac-zkc" secondAttribute="trailing" constant="-20" id="yKa-Is-EB8"/>
                             <constraint firstAttribute="trailing" secondItem="6hT-3P-jdn" secondAttribute="trailing" id="zBp-Pk-bMY"/>
                         </constraints>
@@ -629,6 +636,9 @@
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="paintRandomBlack" translatesAutoresizingMaskIntoConstraints="NO" id="l08-y8-y30">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="551"/>
+                            </imageView>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" text="Karaoke" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="PmS-e8-IaK">
                                 <rect key="frame" x="189" y="30" width="222" height="42"/>
                                 <constraints>
@@ -677,6 +687,7 @@
                         <constraints>
                             <constraint firstItem="mix-oC-oxm" firstAttribute="top" secondItem="v60-HZ-3I8" secondAttribute="top" id="0fH-lh-IEj"/>
                             <constraint firstItem="mix-oC-oxm" firstAttribute="trailing" secondItem="FEc-WB-QBs" secondAttribute="trailing" id="2SC-QT-5sd"/>
+                            <constraint firstAttribute="trailing" secondItem="l08-y8-y30" secondAttribute="trailing" id="Bro-YX-z4h"/>
                             <constraint firstItem="mix-oC-oxm" firstAttribute="bottom" secondItem="arE-xq-qlp" secondAttribute="top" id="CCw-7F-SoC"/>
                             <constraint firstItem="PGP-6V-n2S" firstAttribute="top" secondItem="PmS-e8-IaK" secondAttribute="bottom" constant="8" symbolic="YES" id="HNq-GW-LWf"/>
                             <constraint firstItem="PmS-e8-IaK" firstAttribute="centerX" secondItem="v60-HZ-3I8" secondAttribute="centerX" id="ITW-ml-OHE"/>
@@ -684,9 +695,12 @@
                             <constraint firstItem="mix-oC-oxm" firstAttribute="top" secondItem="PGP-6V-n2S" secondAttribute="bottom" id="M6Z-bn-Cun"/>
                             <constraint firstItem="PGP-6V-n2S" firstAttribute="centerX" secondItem="PmS-e8-IaK" secondAttribute="centerX" id="Ph5-2y-khm"/>
                             <constraint firstItem="FEc-WB-QBs" firstAttribute="top" secondItem="PGP-6V-n2S" secondAttribute="bottom" constant="8" symbolic="YES" id="Umq-4B-HGR"/>
+                            <constraint firstItem="arE-xq-qlp" firstAttribute="top" secondItem="l08-y8-y30" secondAttribute="bottom" id="Vcn-UX-Axd"/>
                             <constraint firstItem="FEc-WB-QBs" firstAttribute="leading" secondItem="v60-HZ-3I8" secondAttribute="leading" id="Y5c-bj-NYQ"/>
                             <constraint firstItem="PmS-e8-IaK" firstAttribute="top" secondItem="JXi-nz-gtv" secondAttribute="bottom" constant="10" id="ZwX-Lt-jnI"/>
+                            <constraint firstItem="l08-y8-y30" firstAttribute="leading" secondItem="v60-HZ-3I8" secondAttribute="leading" id="cvi-Ou-r9X"/>
                             <constraint firstItem="FEc-WB-QBs" firstAttribute="bottom" secondItem="arE-xq-qlp" secondAttribute="top" id="f6H-vs-Oea"/>
+                            <constraint firstItem="l08-y8-y30" firstAttribute="top" secondItem="v60-HZ-3I8" secondAttribute="top" id="hb8-WL-J2a"/>
                             <constraint firstItem="PGP-6V-n2S" firstAttribute="leading" secondItem="v60-HZ-3I8" secondAttribute="leadingMargin" id="htm-Kv-tD6"/>
                             <constraint firstItem="FEc-WB-QBs" firstAttribute="top" secondItem="PmS-e8-IaK" secondAttribute="bottom" constant="15" id="wWh-z7-nCT"/>
                             <constraint firstItem="mix-oC-oxm" firstAttribute="leading" secondItem="FEc-WB-QBs" secondAttribute="leading" id="xgo-Xt-dCr"/>
@@ -1043,8 +1057,10 @@
         <image name="horizontalBarFlipped" width="1842" height="82"/>
         <image name="horizontalBarUpsideDown" width="1842" height="82"/>
         <image name="mic" width="48" height="32"/>
+        <image name="paintBorderBlack" width="600" height="866"/>
+        <image name="paintMiddleBlack" width="600" height="847"/>
         <image name="paintRandomBlack" width="600" height="847"/>
-        <image name="paintRandomWhite" width="600" height="847"/>
+        <image name="paintSplatterBlack" width="600" height="847"/>
         <image name="tile" width="48" height="32"/>
     </resources>
 </document>
