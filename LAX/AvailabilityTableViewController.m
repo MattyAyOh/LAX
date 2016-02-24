@@ -14,7 +14,7 @@
 -(void)viewDidLoad
 {
    [super viewDidLoad];
-   [self.view setBackgroundColor:[UIColor laxRED]];
+   [self.view setBackgroundColor:[UIColor clearColor]];
 }
 
 - (UIView*)formattedTableHeaderView

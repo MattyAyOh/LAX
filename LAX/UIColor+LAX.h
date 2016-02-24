@@ -12,6 +12,7 @@
 
 +(UIColor*)laxRED;
 +(UIColor*)laxGREEN;
++(UIColor*)laxLightGRAY;
 +(UIColor*)laxGRAY;
 +(UIColor*)laxVeryLightTransparentGRAY;
 +(UIColor*)laxLightTransparentGRAY;

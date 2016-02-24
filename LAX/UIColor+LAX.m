@@ -20,6 +20,11 @@
    return [UIColor colorWithRed:(21.0/255.0) green:(198.0/255.0) blue:(98.0/255.0) alpha:1.0];
 }
 
++(UIColor*)laxLightGRAY
+{
+   return [UIColor colorWithRed:(189.0/255.0) green:(189.0/255.0) blue:(189.0/255.0) alpha:1.0];
+}
+
 +(UIColor*)laxGRAY
 {
    return [UIColor colorWithRed:(33.0/255.0) green:(33.0/255.0) blue:(33.0/255.0) alpha:1.0];

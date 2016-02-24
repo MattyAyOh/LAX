@@ -45,7 +45,9 @@
       
       NSString *timeString = [NSString stringWithFormat:@"OCCUPIED SINCE: %d:%02d%@", hourTaken, minuteTaken, ampmString];
       [label setText:timeString];
-      [label setAttributedText:[label.attributedText stringByAddingOutlineOfColor:[UIColor blackColor] thickness:@-5.0]];
+      NSMutableAttributedString *tempString = [label.attributedText mutableCopy];
+      [tempString setAttributes:@{NSForegroundColorAttributeName:[UIColor laxLightGRAY]} range:NSMakeRange(0, 15)];
+      [label setAttributedText:[tempString stringByAddingOutlineOfColor:[UIColor blackColor] thickness:@-5.0]];
    }
 }
 
