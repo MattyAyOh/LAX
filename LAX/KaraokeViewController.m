@@ -40,6 +40,8 @@
    [self.loadingLabel setText:@"LOADING..."];
    [self.loadingLabel setTextColor:[UIColor whiteColor]];
    [self.loadingView setHidden:NO];
+   [self.karaokeTable setRowsToLoadingStatus];
+   
    CKDatabase *publicDatabase = [[CKContainer defaultContainer] publicCloudDatabase];
    
    NSPredicate *predicate = [NSPredicate predicateWithValue:YES];

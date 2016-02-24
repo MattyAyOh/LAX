@@ -30,4 +30,5 @@
 - (UIView*)formattedTableHeaderView;
 - (UILabel*)formattedTableHeaderLabel;
 
+- (void)setRowsToLoadingStatus;
 @end

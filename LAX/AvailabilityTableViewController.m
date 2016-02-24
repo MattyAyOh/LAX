@@ -38,12 +38,12 @@
    return tempLabel;
 }
 
--(CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
+- (CGFloat)tableView:(UITableView *)tableView heightForHeaderInSection:(NSInteger)section
 {
    return 38.0;
 }
 
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
    UITableViewCell *tempCell = [super tableView:tableView cellForRowAtIndexPath:indexPath];
    
@@ -51,6 +51,51 @@
    [tempCell.contentView.layer setBorderWidth:2.0f];
    
    return tempCell;
+}
+
+//Yeah... I know.
+- (void)setRowsToLoadingStatus
+{
+   if( self.roomOneView ) {
+      [self.roomOneView setBackgroundColor:[UIColor laxGRAY]];
+      [self.roomOneLabel setText:@"Loading..."];
+      [self.roomOneLabel setAttributedText:[self.roomOneLabel.attributedText stringByAddingOutlineOfColor:[UIColor blackColor] thickness:@-5.0]];
+   }
+   if( self.roomTwoView ) {
+      [self.roomTwoView setBackgroundColor:[UIColor laxGRAY]];
+      [self.roomTwoLabel setText:@"Loading..."];
+      [self.roomTwoLabel setAttributedText:[self.roomTwoLabel.attributedText stringByAddingOutlineOfColor:[UIColor blackColor] thickness:@-5.0]];
+   }
+   if( self.roomThreeView ) {
+      [self.roomThreeView setBackgroundColor:[UIColor laxGRAY]];
+      [self.roomThreeLabel setText:@"Loading..."];
+      [self.roomThreeLabel setAttributedText:[self.roomThreeLabel.attributedText stringByAddingOutlineOfColor:[UIColor blackColor] thickness:@-5.0]];
+   }
+   if( self.roomFourView ) {
+      [self.roomFourView setBackgroundColor:[UIColor laxGRAY]];
+      [self.roomFourLabel setText:@"Loading..."];
+      [self.roomFourLabel setAttributedText:[self.roomFourLabel.attributedText stringByAddingOutlineOfColor:[UIColor blackColor] thickness:@-5.0]];
+   }
+   if( self.roomFiveView ) {
+      [self.roomFiveView setBackgroundColor:[UIColor laxGRAY]];
+      [self.roomFiveLabel setText:@"Loading..."];
+      [self.roomFiveLabel setAttributedText:[self.roomFiveLabel.attributedText stringByAddingOutlineOfColor:[UIColor blackColor] thickness:@-5.0]];
+   }
+   if( self.roomSixView ) {
+      [self.roomSixView setBackgroundColor:[UIColor laxGRAY]];
+      [self.roomSixLabel setText:@"Loading..."];
+      [self.roomSixLabel setAttributedText:[self.roomSixLabel.attributedText stringByAddingOutlineOfColor:[UIColor blackColor] thickness:@-5.0]];
+   }
+   if( self.roomSevenView ) {
+      [self.roomSevenView setBackgroundColor:[UIColor laxGRAY]];
+      [self.roomSevenLabel setText:@"Loading..."];
+      [self.roomSevenLabel setAttributedText:[self.roomSevenLabel.attributedText stringByAddingOutlineOfColor:[UIColor blackColor] thickness:@-5.0]];
+   }
+   if( self.roomEightView ) {
+      [self.roomEightView setBackgroundColor:[UIColor laxGRAY]];
+      [self.roomEightLabel setText:@"Loading..."];
+      [self.roomEightLabel setAttributedText:[self.roomEightLabel.attributedText stringByAddingOutlineOfColor:[UIColor blackColor] thickness:@-5.0]];
+   }
 }
 
 @end
