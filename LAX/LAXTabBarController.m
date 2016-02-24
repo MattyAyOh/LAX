@@ -41,30 +41,36 @@
 {
    NSUInteger selectedIndex = [self selectedIndex];
    
-   [self setSelectedIndex:selectedIndex + 1];
-   
-   CATransition *anim= [CATransition animation];
-   [anim setType:kCATransitionPush];
-   [anim setSubtype:kCATransitionFromRight];
-   [anim setDuration:0.3];
-   [anim setTimingFunction:[CAMediaTimingFunction functionWithName:
-                            kCAMediaTimingFunctionEaseIn]];
-   [self.view.layer addAnimation:anim forKey:@"fadeTransition"];
+   if( selectedIndex < 3 )
+   {
+      [self setSelectedIndex:selectedIndex + 1];
+      
+      CATransition *anim= [CATransition animation];
+      [anim setType:kCATransitionPush];
+      [anim setSubtype:kCATransitionFromRight];
+      [anim setDuration:0.3];
+      [anim setTimingFunction:[CAMediaTimingFunction functionWithName:
+                               kCAMediaTimingFunctionEaseIn]];
+      [self.view.layer addAnimation:anim forKey:@"fadeTransition"];
+   }
 }
 
 - (IBAction)tappedLeftButton:(id)sender
 {
    NSUInteger selectedIndex = [self selectedIndex];
    
-   [self setSelectedIndex:selectedIndex - 1];
-   
-   CATransition *anim= [CATransition animation];
-   [anim setType:kCATransitionPush];
-   [anim setSubtype:kCATransitionFromLeft];
-   
-   [anim setDuration:0.3];
-   [anim setTimingFunction:[CAMediaTimingFunction functionWithName:
-                            kCAMediaTimingFunctionEaseIn]];
-   [self.view.layer addAnimation:anim forKey:@"fadeTransition"];
+   if( selectedIndex > 0 )
+   {
+      [self setSelectedIndex:selectedIndex - 1];
+      
+      CATransition *anim= [CATransition animation];
+      [anim setType:kCATransitionPush];
+      [anim setSubtype:kCATransitionFromLeft];
+      
+      [anim setDuration:0.3];
+      [anim setTimingFunction:[CAMediaTimingFunction functionWithName:
+                               kCAMediaTimingFunctionEaseIn]];
+      [self.view.layer addAnimation:anim forKey:@"fadeTransition"];
+   }
 }
 @end
