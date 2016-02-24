@@ -7,6 +7,7 @@
 //
 
 #import "HomeViewController.h"
+#import "AppDelegate.h"
 
 @interface HomeViewController ()
 
@@ -47,7 +48,7 @@
    
    self.homeBackgroundView.layer.cornerRadius = 20.0;
    self.homeBackgroundView.backgroundColor = [UIColor laxSemiTransparentGRAY];
-
+   
    self.newsTextView.attributedText = [self.newsTextView.attributedText stringByAddingOutlineOfColor:[UIColor blackColor] thickness:@-3.0];
    self.addressTextView.attributedText = [self.addressTextView.attributedText stringByAddingOutlineOfColor:[UIColor blueColor] thickness:@-3.0];
    self.phoneTextView.attributedText = [self.phoneTextView.attributedText stringByAddingOutlineOfColor:[UIColor blueColor] thickness:@-3.0];
@@ -58,7 +59,7 @@
       [self.addressTextView removeFromSuperview];
       [self.phoneTextView removeFromSuperview];
    }
-
+   
    [self homeSegmentedControlChanged:nil];
    
    [NSTimer scheduledTimerWithTimeInterval:0.4 target:self selector:@selector(flashStatus:) userInfo:nil repeats:YES];
@@ -76,10 +77,16 @@
 {
    if( self.homeSegmentedControl.selectedSegmentIndex == 0 )
    {
+      NSDictionary *attributes = [self.newsTextView.attributedText attributesAtIndex:0 effectiveRange:NULL];
+      NSString *newsString = [(AppDelegate*)[[UIApplication sharedApplication] delegate] newsString];
+      if( newsString ) {
+         self.newsTextView.attributedText = [[NSAttributedString alloc] initWithString:newsString attributes:attributes];
+      }
+      
       [self.aboutTextView setHidden:YES];
       [self.newsTextView setHidden:NO];
       [self hideBusinessInfo:YES];
-
+      
    }
    else if( self.homeSegmentedControl.selectedSegmentIndex == 1 )
    {
@@ -89,10 +96,14 @@
    }
    else
    {
+      NSDictionary *attributes = [self.aboutTextView.attributedText attributesAtIndex:0 effectiveRange:NULL];
+      NSString *aboutString = [(AppDelegate*)[[UIApplication sharedApplication] delegate] aboutString];
+      if ( aboutString ) {
+         self.aboutTextView.attributedText = [[NSAttributedString alloc] initWithString:aboutString attributes:attributes];
+      }
       [self.aboutTextView setHidden:NO];
       [self.newsTextView setHidden:YES];
       [self hideBusinessInfo:YES];
-      [self.aboutTextView setText:@"HEYHYE"];
    }
 }
 
@@ -101,7 +112,7 @@
    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitHour | NSCalendarUnitWeekday fromDate:[NSDate date]];
    NSInteger currentHour = [components hour];
    NSInteger weekDay = [components weekday];
-
+   
    if( currentHour < 2 )
    {
       [self setStatusToOpen];
@@ -136,7 +147,7 @@
 - (void)flashStatus:(NSTimer*)timer
 {
    self.characterIndex ++;
-
+   
    NSMutableAttributedString *tempString = [self.statusLabel.attributedText mutableCopy];
    NSDictionary *activeAttribute = @{NSForegroundColorAttributeName:[UIColor redColor]};
    if( self.statusIsOpen )
@@ -144,7 +155,7 @@
       activeAttribute = @{NSForegroundColorAttributeName:[UIColor greenColor]};
    }
    NSDictionary *grayAttribute = @{NSForegroundColorAttributeName:[UIColor laxGRAY]};
-
+   
    NSRange range = NSMakeRange(0, tempString.length);
    if( self.characterIndex==([tempString length]+5) )
    {

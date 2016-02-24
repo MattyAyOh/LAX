@@ -7,40 +7,46 @@
 //
 
 #import "AppDelegate.h"
-
-@interface AppDelegate ()
-
-@end
+@import CloudKit;
 
 @implementation AppDelegate
 
-
-- (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-   // Override point for customization after application launch.
-   return YES;
-}
-
-- (void)applicationWillResignActive:(UIApplication *)application {
-   // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.
-   // Use this method to pause ongoing tasks, disable timers, and throttle down OpenGL ES frame rates. Games should use this method to pause the game.
-}
-
-- (void)applicationDidEnterBackground:(UIApplication *)application {
-   // Use this method to release shared resources, save user data, invalidate timers, and store enough application state information to restore your application to its current state in case it is terminated later.
-   // If your application supports background execution, this method is called instead of applicationWillTerminate: when the user quits.
-   
-}
-
-- (void)applicationWillEnterForeground:(UIApplication *)application {
-   // Called as part of the transition from the background to the inactive state; here you can undo many of the changes made on entering the background.
-}
-
 - (void)applicationDidBecomeActive:(UIApplication *)application {
-   // Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
-}
+   CKDatabase *publicDatabase = [[CKContainer defaultContainer] publicCloudDatabase];
+   
+   NSPredicate *predicate = [NSPredicate predicateWithValue:YES];
+   CKQuery *query = [[CKQuery alloc] initWithRecordType:@"BusinessMetaData" predicate:predicate];
+   
+   [publicDatabase performQuery:query
+                   inZoneWithID:nil
+              completionHandler:^(NSArray *results, NSError *error)
+    {
+       if( error ) {
+          //LOAD ERROR LOADING IN VIEWS
+       }
+       else
+       {
+          dispatch_async(dispatch_get_main_queue(), ^{
+             for( CKRecord *record in results )
+             {
+//                NSString *hoursString = [record objectForKey:kOpenHours];
+//                NSArray *firstHoursSplitArray = [hoursString componentsSeparatedByString:@";"];
+//                NSArray *sixToTwoArray = [firstHoursSplitArray[0] componentsSeparatedByString:@":"];
+//                NSArray *twoToTwoArray = [firstHoursSplitArray[1] componentsSeparatedByString:@":"];
+                
+                NSString *aboutString = [record objectForKey:kAbout];
+                NSString *finalAboutString = [aboutString stringByReplacingOccurrencesOfString:@";;" withString:@"\n\n"];
+                NSLog(@"FINAL: %@", finalAboutString);
+                self.aboutString = finalAboutString;
 
-- (void)applicationWillTerminate:(UIApplication *)application {
-   // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
+                NSString *newsString = [record objectForKey:kNews];
+                NSString *finalNewsString = [newsString stringByReplacingOccurrencesOfString:@";;" withString:@"\n- "];
+                NSLog(@"FINAL: %@", newsString);
+                self.newsString = finalNewsString;
+             }
+          });
+       }
+    }];
 }
 
 @end

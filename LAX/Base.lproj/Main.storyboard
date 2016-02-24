@@ -162,13 +162,13 @@
                                             </mask>
                                         </variation>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="- Come in Mon-Thu for 20% Off!" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmc-6l-J8K">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="News Failed to Load :(  Try Again" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cmc-6l-J8K">
                                         <rect key="frame" x="8" y="8" width="504" height="275.5"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
-                                        <fontDescription key="fontDescription" name="AvenirNextCondensed-Medium" family="Avenir Next Condensed" pointSize="17"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="17"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="- Come in Mon-Thu for 20% Off!" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XgR-KM-PJC">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="About Failed to Load :( Try Again." textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="XgR-KM-PJC">
                                         <rect key="frame" x="8" y="8" width="504" height="275.5"/>
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="17"/>

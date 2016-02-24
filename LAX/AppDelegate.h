@@ -12,6 +12,9 @@
 
 @property (strong, nonatomic) UIWindow *window;
 
+@property NSString *aboutString;
+@property NSString *newsString;
+
 
 @end
 

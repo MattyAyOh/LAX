@@ -9,8 +9,11 @@
 #ifndef constants_h
 #define constants_h
 
-#define kHour @"HourTaken"
-#define kMinute @"MinuteTaken"
-#define kRoomNumber @"RoomNumber"
+#define kHour        @"HourTaken"
+#define kMinute      @"MinuteTaken"
+#define kRoomNumber  @"RoomNumber"
+#define kAbout       @"About"
+#define kNews        @"News"
+#define kOpenHours   @"Hours"
 
 #endif /* constants_h */
