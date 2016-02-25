@@ -75,7 +75,7 @@
                                         <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="LAXEastLansing.com" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yxG-mE-ym5">
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="LAXEastLansing.com" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="yxG-mE-ym5">
                                         <rect key="frame" x="156" y="241" width="207" height="40"/>
                                         <color key="tintColor" red="0.0" green="0.73911475699999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
@@ -96,8 +96,8 @@
                                             </mask>
                                         </variation>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="(517)-657-7036" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="d9J-Wy-xlW">
-                                        <rect key="frame" x="181" y="166" width="157" height="42"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="(517)-657-7036" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="d9J-Wy-xlW">
+                                        <rect key="frame" x="181" y="170" width="157" height="42"/>
                                         <color key="tintColor" red="0.0" green="0.7391147569530202" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="238" id="3XB-Rv-y98"/>
@@ -125,8 +125,8 @@
                                             </mask>
                                         </variation>
                                     </textView>
-                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" text="301 MAC AVE East Lansing MI" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="CQq-5g-KLi">
-                                        <rect key="frame" x="182" y="95" width="157" height="64"/>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" editable="NO" text="301 MAC AVE East Lansing MI" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="CQq-5g-KLi">
+                                        <rect key="frame" x="182" y="95" width="157" height="68"/>
                                         <color key="tintColor" red="0.0" green="0.73911475699999996" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="201" id="7A2-zb-w4l"/>
@@ -134,7 +134,7 @@
                                             <constraint firstAttribute="width" constant="157" id="HHj-pV-lg6"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="157" id="I3S-EJ-PET"/>
                                             <constraint firstAttribute="width" constant="157" id="JVj-Bq-wJ3"/>
-                                            <constraint firstAttribute="height" constant="64" id="KsD-qb-XNY"/>
+                                            <constraint firstAttribute="height" constant="68" id="KsD-qb-XNY"/>
                                             <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="207" id="TY3-I2-0vt"/>
                                             <constraint firstAttribute="width" constant="238" id="Tdh-a5-15h"/>
                                             <constraint firstAttribute="height" constant="42" id="ecS-jv-w7n"/>
