@@ -17,6 +17,7 @@
    [super viewDidLoad];
    [self.view setBackgroundColor:[UIColor clearColor]];
    self.refreshControl = [[UIRefreshControl alloc] init];
+   [self.refreshControl setTintColor:[UIColor whiteColor]];
    [self.refreshControl addTarget:self action:@selector(refresh:) forControlEvents:UIControlEventValueChanged];
    [self.tableView addSubview:self.refreshControl];
 }
