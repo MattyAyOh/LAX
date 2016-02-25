@@ -31,6 +31,7 @@
    NSString * segueName = segue.identifier;
    if ([segueName isEqualToString: @"mahjongSegue"]) {
       self.mahjongTable = (MahjongTableViewController*)[segue destinationViewController];
+      self.mahjongTable.parentAvailabilityViewController = self;
    }
 }
 

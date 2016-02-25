@@ -7,6 +7,7 @@
 //
 
 #import "AvailabilityTableViewController.h"
+#import "AvailabilityViewController.h"
 #import <QuartzCore/QuartzCore.h>
 
 @implementation AvailabilityTableViewController
@@ -15,6 +16,15 @@
 {
    [super viewDidLoad];
    [self.view setBackgroundColor:[UIColor clearColor]];
+   self.refreshControl = [[UIRefreshControl alloc] init];
+   [self.refreshControl addTarget:self action:@selector(refresh:) forControlEvents:UIControlEventValueChanged];
+   [self.tableView addSubview:self.refreshControl];
+}
+
+- (void)refresh:(id)sender
+{
+   [self.parentAvailabilityViewController viewDidAppear:YES];
+   [self.refreshControl endRefreshing];
 }
 
 - (UIView*)formattedTableHeaderView

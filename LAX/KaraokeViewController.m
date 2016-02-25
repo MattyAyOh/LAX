@@ -31,6 +31,7 @@
    NSString * segueName = segue.identifier;
    if ([segueName isEqualToString: @"karaokeSegue"]) {
       self.karaokeTable = (KaraokeTableViewController*)[segue destinationViewController];
+      self.karaokeTable.parentAvailabilityViewController = self;
    }
 }
 
@@ -73,7 +74,7 @@
                 }
                 else if( [roomNumber isEqual: @4] )
                 {
-                   [self updateRowWithRecord:record ForView:self.karaokeTable.roomFourLabel andLabel:self.karaokeTable.roomFourLabel];
+                   [self updateRowWithRecord:record ForView:self.karaokeTable.roomFourView andLabel:self.karaokeTable.roomFourLabel];
                 }
              }
              [self.loadingView setHidden:YES];

@@ -30,6 +30,7 @@
    NSString * segueName = segue.identifier;
    if ([segueName isEqualToString: @"poolSegue"]) {
       self.poolTable = (PoolTableViewController*)[segue destinationViewController];
+      self.poolTable.parentAvailabilityViewController = self;
    }
 }
 

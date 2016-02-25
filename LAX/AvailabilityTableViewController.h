@@ -8,6 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
+@class AvailabilityViewController;
 @interface AvailabilityTableViewController : UITableViewController
 
 @property (strong, nonatomic) IBOutlet UIView *roomOneView;
@@ -26,6 +27,8 @@
 @property (strong, nonatomic) IBOutlet UILabel *roomSevenLabel;
 @property (strong, nonatomic) IBOutlet UIView *roomEightView;
 @property (strong, nonatomic) IBOutlet UILabel *roomEightLabel;
+
+@property (weak) AvailabilityViewController *parentAvailabilityViewController;
 
 - (UIView*)formattedTableHeaderView;
 - (UILabel*)formattedTableHeaderLabel;
