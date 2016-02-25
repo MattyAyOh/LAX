@@ -36,12 +36,10 @@
                 
                 NSString *aboutString = [record objectForKey:kAbout];
                 NSString *finalAboutString = [aboutString stringByReplacingOccurrencesOfString:@";;" withString:@"\n\n"];
-                NSLog(@"FINAL: %@", finalAboutString);
                 self.aboutString = finalAboutString;
 
                 NSString *newsString = [record objectForKey:kNews];
                 NSString *finalNewsString = [newsString stringByReplacingOccurrencesOfString:@";;" withString:@"\n- "];
-                NSLog(@"FINAL: %@", newsString);
                 self.newsString = finalNewsString;
              }
           });
