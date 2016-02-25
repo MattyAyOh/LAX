@@ -96,6 +96,8 @@
           });
        }
     }];
+   
+   [(AppDelegate*)[[UIApplication sharedApplication] delegate] incrementTrackerForKey:kTrackingMahjongPressed];
 }
 
 

@@ -87,6 +87,7 @@
       [self.newsTextView setHidden:NO];
       [self hideBusinessInfo:YES];
       
+      [(AppDelegate*)[[UIApplication sharedApplication] delegate] incrementTrackerForKey:kTrackingNewsPressed];
    }
    else if( self.homeSegmentedControl.selectedSegmentIndex == 1 )
    {
@@ -104,29 +105,17 @@
       [self.aboutTextView setHidden:NO];
       [self.newsTextView setHidden:YES];
       [self hideBusinessInfo:YES];
+      
+      [(AppDelegate*)[[UIApplication sharedApplication] delegate] incrementTrackerForKey:kTrackingAboutPressed];
    }
 }
 
 -(void)viewDidAppear:(BOOL)animated
 {
-   NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitHour | NSCalendarUnitWeekday fromDate:[NSDate date]];
-   NSInteger currentHour = [components hour];
-   NSInteger weekDay = [components weekday];
-   
-   if( currentHour < 2 )
-   {
+   if( [(AppDelegate*)[[UIApplication sharedApplication] delegate] checkIfOpen] ) {
       [self setStatusToOpen];
    }
-   else if( currentHour >= 14 && (weekDay == 1 || weekDay == 7) )
-   {
-      [self setStatusToOpen];
-   }
-   else if( currentHour >= 18 && (weekDay == 2 || weekDay == 3 || weekDay == 4 || weekDay == 5 || weekDay == 6 ) )
-   {
-      [self setStatusToOpen];
-   }
-   else
-   {
+   else {
       [self setStatusToClosed];
    }
 }

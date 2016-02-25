@@ -80,6 +80,8 @@
           });
        }
     }];
+   
+   [(AppDelegate*)[[UIApplication sharedApplication] delegate] incrementTrackerForKey:kTrackingPoolPressed];
 }
 
 @end

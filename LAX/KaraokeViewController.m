@@ -8,7 +8,6 @@
 
 #import "KaraokeViewController.h"
 #import "KaraokeTableViewController.h"
-@import CloudKit;
 
 @interface KaraokeViewController ()
 
@@ -81,6 +80,8 @@
           });
        }
     }];
+   
+   [(AppDelegate*)[[UIApplication sharedApplication] delegate] incrementTrackerForKey:kTrackingKaraokePressed];
 }
 
 
