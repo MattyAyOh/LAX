@@ -22,7 +22,7 @@
               completionHandler:^(NSArray *results, NSError *error)
     {
        if( error ) {
-          //LOAD ERROR LOADING IN VIEWS
+          self.aboutString = @"LAX is now under new management :)\n\nFree Wi-Fi, free chillin'\n\nRent private rooms for Mahjong and Karaoke\n\nWe have new 9' Pool Tables\n\nWe sell Imported snacks and drinks\n\nWe also host private events, rates given upon request";
        }
        else
        {
