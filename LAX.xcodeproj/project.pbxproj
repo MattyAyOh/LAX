@@ -19,11 +19,16 @@
 		3A3B137A1C62EA3B000E0732 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A3B13791C62EA3B000E0732 /* AppDelegate.m */; };
 		3A3B13831C62EA3B000E0732 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A3B13811C62EA3B000E0732 /* Main.storyboard */; };
 		3A3B13851C62EA3B000E0732 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3A3B13841C62EA3B000E0732 /* Assets.xcassets */; };
+		3A3B6C5C1C9A6B690065C024 /* LAXLaunch2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A3B6C581C9A6B690065C024 /* LAXLaunch2x.png */; };
+		3A3B6C5D1C9A6B690065C024 /* LAXLaunchRetina4.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A3B6C591C9A6B690065C024 /* LAXLaunchRetina4.png */; };
+		3A3B6C5E1C9A6B690065C024 /* LAXLaunchMedium.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A3B6C5A1C9A6B690065C024 /* LAXLaunchMedium.png */; };
+		3A3B6C5F1C9A6B690065C024 /* LAXLaunchFull.png in Resources */ = {isa = PBXBuildFile; fileRef = 3A3B6C5B1C9A6B690065C024 /* LAXLaunchFull.png */; };
 		3A7F5E3A1C6821AD00B0F5CB /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A7F5E391C6821AD00B0F5CB /* CloudKit.framework */; };
 		3A7F5E401C6FB09600B0F5CB /* MahjongViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7F5E3F1C6FB09600B0F5CB /* MahjongViewController.m */; };
 		3A7F5E431C6FB0A400B0F5CB /* PoolViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7F5E421C6FB0A400B0F5CB /* PoolViewController.m */; };
 		3A7F5E461C6FB14800B0F5CB /* HomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7F5E451C6FB14800B0F5CB /* HomeViewController.m */; };
 		3A7F5E491C755DAE00B0F5CB /* AvailabilityTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3A7F5E481C755DAE00B0F5CB /* AvailabilityTableViewController.m */; };
+		3A849B9C1C9A690D00958C28 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A849B9B1C9A690D00958C28 /* Launch Screen.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +57,10 @@
 		3A3B13821C62EA3B000E0732 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		3A3B13841C62EA3B000E0732 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3A3B13891C62EA3B000E0732 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3A3B6C581C9A6B690065C024 /* LAXLaunch2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LAXLaunch2x.png; sourceTree = "<group>"; };
+		3A3B6C591C9A6B690065C024 /* LAXLaunchRetina4.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LAXLaunchRetina4.png; sourceTree = "<group>"; };
+		3A3B6C5A1C9A6B690065C024 /* LAXLaunchMedium.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LAXLaunchMedium.png; sourceTree = "<group>"; };
+		3A3B6C5B1C9A6B690065C024 /* LAXLaunchFull.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = LAXLaunchFull.png; sourceTree = "<group>"; };
 		3A7F5E381C681E4100B0F5CB /* LAX.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.xml; path = LAX.entitlements; sourceTree = "<group>"; };
 		3A7F5E391C6821AD00B0F5CB /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
 		3A7F5E3E1C6FB09600B0F5CB /* MahjongViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MahjongViewController.h; sourceTree = "<group>"; };
@@ -62,6 +71,7 @@
 		3A7F5E451C6FB14800B0F5CB /* HomeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeViewController.m; sourceTree = "<group>"; };
 		3A7F5E471C755DAE00B0F5CB /* AvailabilityTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AvailabilityTableViewController.h; sourceTree = "<group>"; };
 		3A7F5E481C755DAE00B0F5CB /* AvailabilityTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AvailabilityTableViewController.m; sourceTree = "<group>"; };
+		3A849B9B1C9A690D00958C28 /* Launch Screen.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +160,7 @@
 				3A3B13811C62EA3B000E0732 /* Main.storyboard */,
 				3A3B13841C62EA3B000E0732 /* Assets.xcassets */,
 				3A3B13751C62EA3B000E0732 /* Supporting Files */,
+				3A849B9B1C9A690D00958C28 /* Launch Screen.storyboard */,
 			);
 			path = LAX;
 			sourceTree = "<group>";
@@ -159,6 +170,10 @@
 			children = (
 				3A7F5E381C681E4100B0F5CB /* LAX.entitlements */,
 				3A3B13891C62EA3B000E0732 /* Info.plist */,
+				3A3B6C581C9A6B690065C024 /* LAXLaunch2x.png */,
+				3A3B6C591C9A6B690065C024 /* LAXLaunchRetina4.png */,
+				3A3B6C5A1C9A6B690065C024 /* LAXLaunchMedium.png */,
+				3A3B6C5B1C9A6B690065C024 /* LAXLaunchFull.png */,
 				3A3B13761C62EA3B000E0732 /* main.m */,
 				3A11F69F1C7A397C00A9971E /* PrefixHeader.pch */,
 			);
@@ -228,8 +243,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3A3B6C5C1C9A6B690065C024 /* LAXLaunch2x.png in Resources */,
+				3A3B6C5E1C9A6B690065C024 /* LAXLaunchMedium.png in Resources */,
+				3A849B9C1C9A690D00958C28 /* Launch Screen.storyboard in Resources */,
+				3A3B6C5F1C9A6B690065C024 /* LAXLaunchFull.png in Resources */,
 				3A3B13851C62EA3B000E0732 /* Assets.xcassets in Resources */,
 				3A3B13831C62EA3B000E0732 /* Main.storyboard in Resources */,
+				3A3B6C5D1C9A6B690065C024 /* LAXLaunchRetina4.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,7 +375,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = LAX/LAX.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -373,7 +392,6 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				CODE_SIGN_ENTITLEMENTS = LAX/LAX.entitlements;
 				CODE_SIGN_IDENTITY = "iPhone Distribution";
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";

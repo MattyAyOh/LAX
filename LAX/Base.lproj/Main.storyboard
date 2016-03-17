@@ -354,11 +354,11 @@
                         </constraints>
                         <variation key="default">
                             <mask key="constraints">
+                                <exclude reference="xlR-L8-Kpd"/>
+                                <exclude reference="yzv-mb-SEM"/>
                                 <exclude reference="9Ni-dW-uxa"/>
                                 <exclude reference="KaS-x5-VCu"/>
                                 <exclude reference="t3l-bs-O2N"/>
-                                <exclude reference="xlR-L8-Kpd"/>
-                                <exclude reference="yzv-mb-SEM"/>
                             </mask>
                         </variation>
                     </view>
