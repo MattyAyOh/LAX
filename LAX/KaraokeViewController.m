@@ -82,6 +82,7 @@
     }];
    
    [(AppDelegate*)[[UIApplication sharedApplication] delegate] incrementTrackerForKey:kTrackingKaraokePressed];
+   [super viewDidAppear:animated];
 }
 
 

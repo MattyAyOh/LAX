@@ -82,6 +82,7 @@
     }];
    
    [(AppDelegate*)[[UIApplication sharedApplication] delegate] incrementTrackerForKey:kTrackingPoolPressed];
+   [super viewDidAppear:animated];
 }
 
 @end

@@ -98,6 +98,7 @@
     }];
    
    [(AppDelegate*)[[UIApplication sharedApplication] delegate] incrementTrackerForKey:kTrackingMahjongPressed];
+   [super viewDidAppear:animated];
 }
 
 
