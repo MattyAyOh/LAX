@@ -16,6 +16,7 @@
 @property NSString *newsString;
 
 - (BOOL)checkIfOpen;
+- (void)updateNewsAndAbout;
 - (void)incrementTrackerForKey:(NSString*)key;
 @end
 

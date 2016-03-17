@@ -88,6 +88,7 @@
 
 - (IBAction)homeSegmentedControlChanged:(id)sender
 {
+   [(AppDelegate*)[[UIApplication sharedApplication] delegate] updateNewsAndAbout];
    if( self.homeSegmentedControl.selectedSegmentIndex == 0 )
    {
       NSDictionary *attributes = [self.newsTextView.attributedText attributesAtIndex:0 effectiveRange:NULL];

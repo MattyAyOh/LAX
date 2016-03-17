@@ -11,7 +11,20 @@
 
 @implementation AppDelegate
 
-- (void)applicationDidBecomeActive:(UIApplication *)application {
+- (void)applicationDidBecomeActive:(UIApplication *)application
+{
+   [self updateNewsAndAbout];
+   
+   if( [self checkIfOpen] ) {
+      [self incrementTrackerForKey:kTrackingLaunchOpen];
+   }
+   else {
+      [self incrementTrackerForKey:kTrackingLaunchClosed];
+   }
+}
+
+- (void)updateNewsAndAbout
+{
    CKDatabase *publicDatabase = [[CKContainer defaultContainer] publicCloudDatabase];
    
    NSPredicate *predicate = [NSPredicate predicateWithValue:YES];
@@ -45,15 +58,7 @@
           });
        }
     }];
-   
-   if( [self checkIfOpen] ) {
-      [self incrementTrackerForKey:kTrackingLaunchOpen];
-   }
-   else {
-      [self incrementTrackerForKey:kTrackingLaunchClosed];
-   }
 }
-
 - (BOOL)checkIfOpen
 {
    NSDateComponents *components = [[NSCalendar currentCalendar] components:NSCalendarUnitHour | NSCalendarUnitWeekday fromDate:[NSDate date]];
