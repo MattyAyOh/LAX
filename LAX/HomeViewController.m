@@ -30,6 +30,7 @@
 @property (strong, nonatomic) IBOutlet UITextView *phoneTextView;
 @property (strong, nonatomic) IBOutlet UITextView *websiteTextView;
 
+@property NSTimer *signTimer;
 @end
 
 @implementation HomeViewController
@@ -62,7 +63,19 @@
    
    [self homeSegmentedControlChanged:nil];
    
-   [NSTimer scheduledTimerWithTimeInterval:0.4 target:self selector:@selector(flashStatus:) userInfo:nil repeats:YES];
+   [[NSNotificationCenter defaultCenter] addObserver:self
+                                            selector:@selector(beginSignTimer)
+                                                name:UIApplicationDidBecomeActiveNotification
+                                              object:nil];
+   [[NSNotificationCenter defaultCenter] addObserver:self
+                                            selector:@selector(endSignTimer)
+                                                name:UIApplicationDidEnterBackgroundNotification
+                                              object:nil];
+}
+
+-(void)dealloc
+{
+   [[NSNotificationCenter defaultCenter] removeObserver:self];
 }
 
 - (void)hideBusinessInfo:(BOOL)flag
@@ -110,14 +123,21 @@
    }
 }
 
--(void)viewDidAppear:(BOOL)animated
+- (void)beginSignTimer
 {
+   self.signTimer = [NSTimer scheduledTimerWithTimeInterval:0.4 target:self selector:@selector(flashStatus:) userInfo:nil repeats:YES];
+   
    if( [(AppDelegate*)[[UIApplication sharedApplication] delegate] checkIfOpen] ) {
       [self setStatusToOpen];
    }
    else {
       [self setStatusToClosed];
    }
+}
+
+- (void)endSignTimer
+{
+   [self.signTimer invalidate];
 }
 
 - (void)setStatusToOpen
