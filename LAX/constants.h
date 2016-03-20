@@ -18,6 +18,7 @@
 
 #define kTableTracking           @"Tracking"
 #define kTableBusinessMetaData   @"BusinessMetaData"
+#define kTrackingFirstLaunch     @"FirstLaunch"
 #define kTrackingLaunchOpen      @"LaunchedWhenOpen"
 #define kTrackingLaunchClosed    @"LaunchedWhenClosed"
 #define kTrackingAboutPressed    @"AboutPressed"

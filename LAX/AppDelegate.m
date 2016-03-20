@@ -11,6 +11,13 @@
 
 @implementation AppDelegate
 
+-(void)applicationDidFinishLaunching:(UIApplication *)application
+{
+   if( ![[NSUserDefaults standardUserDefaults] boolForKey:kTrackingFirstLaunch] ) {
+      [[NSUserDefaults standardUserDefaults] setBool:YES forKey:kTrackingFirstLaunch];
+      [self incrementTrackerForKey:kTrackingFirstLaunch];
+   }
+}
 - (void)applicationDidBecomeActive:(UIApplication *)application
 {
    [self updateNewsAndAbout];
